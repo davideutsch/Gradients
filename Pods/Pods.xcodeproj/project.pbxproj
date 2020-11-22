@@ -7,76 +7,131 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4CEE8F8926D083DB946494C26C4A2002 /* Pods-GradientsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99B41A93C9D5DAFF5FA21303490BF0F2 /* Pods-GradientsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		560082CBE988F7F40134017ADDBBE3C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		631E6FF2C34614B7252291D107D204A1 /* Pods-Gradients-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E54771C5D4936F297A931DA8CC93909 /* Pods-Gradients-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F1E8934D83462FF6D3C9D2E602FD368 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2AE1CB979809662C29C04D3F00B62259 /* SwipeExpansionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC1B4A12BD5CB0CD0C348EFE9CF5DED /* SwipeExpansionStyle.swift */; };
+		33D3E16A7C3580B04F4872F646C71AA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		37B21598D79AAB24127E025FD2915CAB /* SwipeCollectionViewCell+Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19EAF0B69D81000D2AF7DEBE41E96DE /* SwipeCollectionViewCell+Display.swift */; };
+		4C09DF4559F1ED92F2D5FCF68B9533BB /* SwipeActionTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D51BE8ED05EE13E766E495F2677D47 /* SwipeActionTransitioning.swift */; };
+		4CEE8F8926D083DB946494C26C4A2002 /* Pods-GradientsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EF779CC9F0F3F34F1CCDD53BD41FA25 /* Pods-GradientsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5790E2A95F7975FA5362342326E7BFD9 /* Pods-Gradients-GradientsUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55CEDCCA7658A0248919C20256481E25 /* Pods-Gradients-GradientsUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F29D68FABD1DBFB2CE81CD0EEB8C717 /* Swipeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C332EB59EF16677CB30DA30FEE8271 /* Swipeable.swift */; };
+		673675F0D1021CC1AFC87DDDB66F3280 /* SwipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F17491CB8ABCE368096944D103FD55 /* SwipeTableViewCell.swift */; };
+		683808AB342CD6D4B49238896FA41A89 /* SwipeActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6793C105BF4BBDF7BCAE216C51538 /* SwipeActionsView.swift */; };
+		6D511F288B33A0B110DD241009EADDF3 /* SwipeFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55D566EE14CF3196537D335011E254F /* SwipeFeedback.swift */; };
+		77B80B1AF5452E5544C84C319F9895C6 /* SwipeCellKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F40EC90551D5E2A1769FFBECDDD5D0D /* SwipeCellKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A9C49CDF8C8D4C36AD2121201A40D27 /* Pods-Gradients-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1090776F54965F67EE71F93477056DB4 /* Pods-Gradients-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B5FEBC758BE2C3E569600DFA545E083 /* SwipeTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597742AC28C6F782DF3216E0B16E63C7 /* SwipeTableViewCellDelegate.swift */; };
+		7CFF7CEAACD1B839D0949659B0A983CC /* SwipeTransitionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99A573D410DFD70C818A0CABE74766B /* SwipeTransitionLayout.swift */; };
+		7DA5C68B82263031A77651312A948BB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		7E2FD6104356344F4BF6045D22EFD606 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		93547B2C62176A584B6F4F7F35A453D1 /* Pods-Gradients-GradientsUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ECE676639EEC46DF58417F89F89CC54 /* Pods-Gradients-GradientsUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96B6F2E07DB9526E7A13F4D748F60A14 /* Pods-Gradients-GradientsUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7275D390C06C1EDD2EAE9BEBC4920E11 /* Pods-Gradients-GradientsUITests-dummy.m */; };
-		A6FCFB14BC34C71735A03F6AB8AF37C8 /* Pods-GradientsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C01583DD3F571D0FF12F808C68EC29E /* Pods-GradientsTests-dummy.m */; };
-		C381859E1D89A0D832588B4CFB3CCEB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		FB8A9992D614D368885DADA17776C648 /* Pods-Gradients-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B046D26E3B5EB894215B95E2186275 /* Pods-Gradients-dummy.m */; };
+		93DE825E02AB8DD74859BF5124306CE1 /* SwipeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B884B78B164AB62A113031935002CB8 /* SwipeAnimator.swift */; };
+		98FD4EE4D50D5431B633D2CFE35E6490 /* SwipeActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1B7D2E25639C505C9304AFC77EFD11 /* SwipeActionButton.swift */; };
+		9D94E9855EB48604692E0A6EA874541D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B9965F66906D396A97806F7C35A7BD /* Extensions.swift */; };
+		A465A69E28DDC33494F2D7B235CDB4CD /* SwipeExpanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4EE6E554DD264CA738D74AD4BFFA1F /* SwipeExpanding.swift */; };
+		A6FCFB14BC34C71735A03F6AB8AF37C8 /* Pods-GradientsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE1EF9A5D7CF86247C8274ECC434916 /* Pods-GradientsTests-dummy.m */; };
+		A827AC7E2BF92ED0BF5C9254FA3CE2CA /* SwipeTableViewCell+Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668EB2DBC629EF0C2A936AE5E1213578 /* SwipeTableViewCell+Display.swift */; };
+		A90D490E57A38E6C83DC0A626E316834 /* SwipeCellKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBBEA415A355B593C7AADA75A1F405E /* SwipeCellKit-dummy.m */; };
+		AE26D355E9E86F3079A48C29C7AD3D82 /* SwipeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBB74AE6140F721D1B52B84A31CDCC6 /* SwipeCollectionViewCell.swift */; };
+		BE42A919C6D064C9EF9FEADCF32ED9E1 /* Pods-Gradients-GradientsUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 947B1FCC6C220298390DBAF51E6025E6 /* Pods-Gradients-GradientsUITests-dummy.m */; };
+		C5CD221BDB095C7101496E5A5425BCE7 /* Pods-Gradients-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66918B78DFC11990F7AE3FF3E567F2CF /* Pods-Gradients-dummy.m */; };
+		C8D0704B2906CB54EE63116317370DE4 /* SwipeCollectionViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A11883F905F2FA3AE8234FE78AC2588 /* SwipeCollectionViewCellDelegate.swift */; };
+		D0549E548B8DC5D7A4BACB8E96C9D441 /* SwipeAccessibilityCustomAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F576ABDE6B3A1FD533E6461E81730E /* SwipeAccessibilityCustomAction.swift */; };
+		D11C8923B0451C47BA946C43CA7B3CC3 /* SwipeCollectionViewCell+Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511030B1ACC66D02DFF032E7F6B3F41A /* SwipeCollectionViewCell+Accessibility.swift */; };
+		D147BCBC15708326CA8DF3A9EB465E51 /* SwipeTableViewCell+Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37757062654713386EB742BFE1509C40 /* SwipeTableViewCell+Accessibility.swift */; };
+		D6DFB1257A5B7662A05ABB0983A2715D /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB44C13D91C4AA03E872A380DF9481 /* SwipeAction.swift */; };
+		DB3DAAA9D1BB76ECD1CD6D702D6A2887 /* SwipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028B12F815F02FC277752D84702FD618 /* SwipeController.swift */; };
+		E514C59F3A036397E120B3D7E7E848A1 /* SwipeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE18C345CED420E968082C553DA557A /* SwipeOptions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E6A3DD583285131E502F56CFE83AFB67 /* PBXContainerItemProxy */ = {
+		22EE43DD2D12DE4F2ED615170083C605 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3E18613416185CDADAE251716A7BB075;
 			remoteInfo = "Pods-Gradients";
 		};
+		675BE8E4EE7280E85DECDB48D0F997FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DE44C23B82E6671E9E1541D06DE0E87;
+			remoteInfo = SwipeCellKit;
+		};
+		F470EC21164887072A622D50CF632E47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DE44C23B82E6671E9E1541D06DE0E87;
+			remoteInfo = SwipeCellKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A9044DAEDFD51AD8C64F51D84918E48 /* Pods-Gradients-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Gradients-acknowledgements.markdown"; sourceTree = "<group>"; };
+		009B35ED557790EB89904FD44378F9BF /* Pods-GradientsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GradientsTests.modulemap"; sourceTree = "<group>"; };
+		028B12F815F02FC277752D84702FD618 /* SwipeController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeController.swift; path = Source/SwipeController.swift; sourceTree = "<group>"; };
+		0A11883F905F2FA3AE8234FE78AC2588 /* SwipeCollectionViewCellDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeCollectionViewCellDelegate.swift; path = Source/SwipeCollectionViewCellDelegate.swift; sourceTree = "<group>"; };
 		0CAF48F34E0D69B9837C4702516BF610 /* Pods_GradientsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GradientsTests.framework; path = "Pods-GradientsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1718B49912E1CD89EA6F6047B8F678C1 /* Pods-Gradients-GradientsUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Gradients-GradientsUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		24875BB8EEE05887DA2C8723DEB822AE /* Pods-Gradients.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gradients.debug.xcconfig"; sourceTree = "<group>"; };
-		2E41F571A5B59D89863481B2605B5C64 /* Pods-Gradients.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Gradients.modulemap"; sourceTree = "<group>"; };
-		2E54771C5D4936F297A931DA8CC93909 /* Pods-Gradients-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Gradients-umbrella.h"; sourceTree = "<group>"; };
-		3C01583DD3F571D0FF12F808C68EC29E /* Pods-GradientsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GradientsTests-dummy.m"; sourceTree = "<group>"; };
-		5E16BA574B73A6DC6BC731D499B416FC /* Pods-GradientsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GradientsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0D6D31555544F2E8F74DE1A14E204BEF /* Pods-Gradients-GradientsUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Gradients-GradientsUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0E468EA807B171EAB0F3071DC11C9548 /* SwipeCellKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeCellKit.debug.xcconfig; sourceTree = "<group>"; };
+		0EBB74AE6140F721D1B52B84A31CDCC6 /* SwipeCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeCollectionViewCell.swift; path = Source/SwipeCollectionViewCell.swift; sourceTree = "<group>"; };
+		0F8EFA57ED497FEFE0EF3B5E21E547FD /* Pods-Gradients-GradientsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gradients-GradientsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1090776F54965F67EE71F93477056DB4 /* Pods-Gradients-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Gradients-umbrella.h"; sourceTree = "<group>"; };
+		1F40EC90551D5E2A1769FFBECDDD5D0D /* SwipeCellKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeCellKit-umbrella.h"; sourceTree = "<group>"; };
+		1F6CE3F63EB8F3A6D3DD8B875ACACA40 /* Pods-Gradients-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Gradients-Info.plist"; sourceTree = "<group>"; };
+		2490232EA52EED71521FD4427C5A515F /* Pods-GradientsTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GradientsTests-Info.plist"; sourceTree = "<group>"; };
+		29045ED707B7B42493DB15AE24374CB8 /* Pods-Gradients.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gradients.debug.xcconfig"; sourceTree = "<group>"; };
+		2AB390918F9B38623A4780AD1D878EBF /* Pods-Gradients-GradientsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Gradients-GradientsUITests.modulemap"; sourceTree = "<group>"; };
+		33C6793C105BF4BBDF7BCAE216C51538 /* SwipeActionsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeActionsView.swift; path = Source/SwipeActionsView.swift; sourceTree = "<group>"; };
+		37757062654713386EB742BFE1509C40 /* SwipeTableViewCell+Accessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwipeTableViewCell+Accessibility.swift"; path = "Source/SwipeTableViewCell+Accessibility.swift"; sourceTree = "<group>"; };
+		3E1B7D2E25639C505C9304AFC77EFD11 /* SwipeActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeActionButton.swift; path = Source/SwipeActionButton.swift; sourceTree = "<group>"; };
+		3E4EE6E554DD264CA738D74AD4BFFA1F /* SwipeExpanding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeExpanding.swift; path = Source/SwipeExpanding.swift; sourceTree = "<group>"; };
+		3FE18C345CED420E968082C553DA557A /* SwipeOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeOptions.swift; path = Source/SwipeOptions.swift; sourceTree = "<group>"; };
+		457F3AFD6A21D92690342370925D3D33 /* Pods-GradientsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GradientsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		49812F6C75B8E07A3BA38039D064F635 /* Pods-Gradients.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Gradients.modulemap"; sourceTree = "<group>"; };
+		4DE1EF9A5D7CF86247C8274ECC434916 /* Pods-GradientsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GradientsTests-dummy.m"; sourceTree = "<group>"; };
+		4EF779CC9F0F3F34F1CCDD53BD41FA25 /* Pods-GradientsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GradientsTests-umbrella.h"; sourceTree = "<group>"; };
+		50325621779C5BD3FEBB10C0C3929A69 /* SwipeCellKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeCellKit.release.xcconfig; sourceTree = "<group>"; };
+		511030B1ACC66D02DFF032E7F6B3F41A /* SwipeCollectionViewCell+Accessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwipeCollectionViewCell+Accessibility.swift"; path = "Source/SwipeCollectionViewCell+Accessibility.swift"; sourceTree = "<group>"; };
+		55CEDCCA7658A0248919C20256481E25 /* Pods-Gradients-GradientsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Gradients-GradientsUITests-umbrella.h"; sourceTree = "<group>"; };
+		597742AC28C6F782DF3216E0B16E63C7 /* SwipeTableViewCellDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTableViewCellDelegate.swift; path = Source/SwipeTableViewCellDelegate.swift; sourceTree = "<group>"; };
 		5E698596F3A423F8F205D5610FEBF097 /* Pods_Gradients.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Gradients.framework; path = "Pods-Gradients.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6ECE676639EEC46DF58417F89F89CC54 /* Pods-Gradients-GradientsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Gradients-GradientsUITests-umbrella.h"; sourceTree = "<group>"; };
-		7275D390C06C1EDD2EAE9BEBC4920E11 /* Pods-Gradients-GradientsUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Gradients-GradientsUITests-dummy.m"; sourceTree = "<group>"; };
+		60AD70F5CAA0302C7C020E977A54854A /* SwipeCellKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwipeCellKit.modulemap; sourceTree = "<group>"; };
+		612C0A2E3023CADC630EEB7CF579A7EC /* Pods-Gradients-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Gradients-acknowledgements.markdown"; sourceTree = "<group>"; };
+		634AA0DA833EBD5369492C2DD9051E18 /* Pods-Gradients.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gradients.release.xcconfig"; sourceTree = "<group>"; };
+		668EB2DBC629EF0C2A936AE5E1213578 /* SwipeTableViewCell+Display.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwipeTableViewCell+Display.swift"; path = "Source/SwipeTableViewCell+Display.swift"; sourceTree = "<group>"; };
+		66918B78DFC11990F7AE3FF3E567F2CF /* Pods-Gradients-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Gradients-dummy.m"; sourceTree = "<group>"; };
+		66F17491CB8ABCE368096944D103FD55 /* SwipeTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTableViewCell.swift; path = Source/SwipeTableViewCell.swift; sourceTree = "<group>"; };
+		675288082A30EA7D8D7F111AB44D86A2 /* SwipeCellKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwipeCellKit-Info.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		89B046D26E3B5EB894215B95E2186275 /* Pods-Gradients-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Gradients-dummy.m"; sourceTree = "<group>"; };
-		9084E3AF0B6CE9D3760854DD97B3188B /* Pods-Gradients-GradientsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gradients-GradientsUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		995C9980752EA5366DE3E3886DED48D4 /* Pods-Gradients.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gradients.release.xcconfig"; sourceTree = "<group>"; };
-		99B41A93C9D5DAFF5FA21303490BF0F2 /* Pods-GradientsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GradientsTests-umbrella.h"; sourceTree = "<group>"; };
+		7B884B78B164AB62A113031935002CB8 /* SwipeAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimator.swift; path = Source/SwipeAnimator.swift; sourceTree = "<group>"; };
+		7E11E522694283F42AEEABF182EF9723 /* Pods-Gradients-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Gradients-frameworks.sh"; sourceTree = "<group>"; };
+		7EEBE61F53410AECF06C0F3E70C2C91D /* Pods-Gradients-GradientsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gradients-GradientsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8259B05749E52F81353E952E7AEC939C /* Pods-GradientsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GradientsTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		87F576ABDE6B3A1FD533E6461E81730E /* SwipeAccessibilityCustomAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAccessibilityCustomAction.swift; path = Source/SwipeAccessibilityCustomAction.swift; sourceTree = "<group>"; };
+		8B29CC72DC4C603F0B5964F8C8C6DC95 /* Pods-GradientsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GradientsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		91C332EB59EF16677CB30DA30FEE8271 /* Swipeable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Swipeable.swift; path = Source/Swipeable.swift; sourceTree = "<group>"; };
+		92D26B8D4666900F6250A302C289E828 /* Pods-GradientsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GradientsTests.release.xcconfig"; sourceTree = "<group>"; };
+		92D51BE8ED05EE13E766E495F2677D47 /* SwipeActionTransitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeActionTransitioning.swift; path = Source/SwipeActionTransitioning.swift; sourceTree = "<group>"; };
+		947B1FCC6C220298390DBAF51E6025E6 /* Pods-Gradients-GradientsUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Gradients-GradientsUITests-dummy.m"; sourceTree = "<group>"; };
+		9D443E759FE97A6C0CA5A3B5E4142EBA /* SwipeCellKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwipeCellKit.framework; path = SwipeCellKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B3D0DE65C301C891986C41D2B6971B7B /* Pods-GradientsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GradientsTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A6B9965F66906D396A97806F7C35A7BD /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Source/Extensions.swift; sourceTree = "<group>"; };
 		B5A2A67606E70A9B99165B61EE2A9899 /* Pods_Gradients_GradientsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Gradients_GradientsUITests.framework; path = "Pods-Gradients-GradientsUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF34464D44AEA34776C2B0994789CB2B /* Pods-GradientsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GradientsTests.release.xcconfig"; sourceTree = "<group>"; };
-		D56CF5D8B133A135EA64EFDD364EC9B4 /* Pods-Gradients-GradientsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Gradients-GradientsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D5869AEAC667B666FEBEE1A2952D5344 /* Pods-Gradients-GradientsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gradients-GradientsUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D700644978FD3BE5E963A5F157115A12 /* Pods-GradientsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GradientsTests.modulemap"; sourceTree = "<group>"; };
-		E5A0409D96B4BF48E65AAA536F226DBF /* Pods-Gradients-GradientsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Gradients-GradientsUITests.modulemap"; sourceTree = "<group>"; };
-		F3E3CA625341497A3E37BCD64243AE8B /* Pods-Gradients-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Gradients-Info.plist"; sourceTree = "<group>"; };
-		F628D78BB8F480B32F3AC89987EA8C37 /* Pods-Gradients-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Gradients-acknowledgements.plist"; sourceTree = "<group>"; };
-		F6301916C973DF8039CB1FC69CA6E8A5 /* Pods-Gradients-GradientsUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Gradients-GradientsUITests-Info.plist"; sourceTree = "<group>"; };
-		FE9AD96B000C2AB3E2FC0A7859C825C2 /* Pods-GradientsTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GradientsTests-Info.plist"; sourceTree = "<group>"; };
-		FF95767498B148C7ED4D4456CB103D69 /* Pods-GradientsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GradientsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B73B04D8059FBDE5F8DAA51E232FE892 /* Pods-Gradients-GradientsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Gradients-GradientsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BD3C5B413443765A48B1CFF3092AE0E1 /* Pods-Gradients-GradientsUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Gradients-GradientsUITests-frameworks.sh"; sourceTree = "<group>"; };
+		CCC1B4A12BD5CB0CD0C348EFE9CF5DED /* SwipeExpansionStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeExpansionStyle.swift; path = Source/SwipeExpansionStyle.swift; sourceTree = "<group>"; };
+		CFAB44C13D91C4AA03E872A380DF9481 /* SwipeAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAction.swift; path = Source/SwipeAction.swift; sourceTree = "<group>"; };
+		D19EAF0B69D81000D2AF7DEBE41E96DE /* SwipeCollectionViewCell+Display.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwipeCollectionViewCell+Display.swift"; path = "Source/SwipeCollectionViewCell+Display.swift"; sourceTree = "<group>"; };
+		D7FCCAA8FBBE493B507B44F278E74FFD /* Pods-Gradients-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Gradients-acknowledgements.plist"; sourceTree = "<group>"; };
+		DDBBEA415A355B593C7AADA75A1F405E /* SwipeCellKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwipeCellKit-dummy.m"; sourceTree = "<group>"; };
+		E55D566EE14CF3196537D335011E254F /* SwipeFeedback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeFeedback.swift; path = Source/SwipeFeedback.swift; sourceTree = "<group>"; };
+		F30529E826C2CA81E58BDB6F7ECFAD1C /* SwipeCellKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeCellKit-prefix.pch"; sourceTree = "<group>"; };
+		F99A573D410DFD70C818A0CABE74766B /* SwipeTransitionLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTransitionLayout.swift; path = Source/SwipeTransitionLayout.swift; sourceTree = "<group>"; };
+		FAA2D0D2C3FCEEA50D55F0AE11AC2C31 /* Pods-Gradients-GradientsUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Gradients-GradientsUITests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0D9D9F592393148DB61481AEBB2921FD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C381859E1D89A0D832588B4CFB3CCEB8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		272686CBF1CBFA8B831926694A03DD3B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				560082CBE988F7F40134017ADDBBE3C4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		849E29408056FC4DDFB8F80A93B3FB98 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,33 +140,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94709A02836996D113E6C85EA5A8F2A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F1E8934D83462FF6D3C9D2E602FD368 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C453E91E1C9063D65640D8B2654F86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DA5C68B82263031A77651312A948BB3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDBEDF442462D623C30146E6B225FD44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D3E16A7C3580B04F4872F646C71AA1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		044C08587792DE2E38D930CFE96B62D8 /* Pods-GradientsTests */ = {
+		3A00A9EF55CFB054B54EEBDBEE83B17A /* Pods-GradientsTests */ = {
 			isa = PBXGroup;
 			children = (
-				D700644978FD3BE5E963A5F157115A12 /* Pods-GradientsTests.modulemap */,
-				FF95767498B148C7ED4D4456CB103D69 /* Pods-GradientsTests-acknowledgements.markdown */,
-				B3D0DE65C301C891986C41D2B6971B7B /* Pods-GradientsTests-acknowledgements.plist */,
-				3C01583DD3F571D0FF12F808C68EC29E /* Pods-GradientsTests-dummy.m */,
-				FE9AD96B000C2AB3E2FC0A7859C825C2 /* Pods-GradientsTests-Info.plist */,
-				99B41A93C9D5DAFF5FA21303490BF0F2 /* Pods-GradientsTests-umbrella.h */,
-				5E16BA574B73A6DC6BC731D499B416FC /* Pods-GradientsTests.debug.xcconfig */,
-				CF34464D44AEA34776C2B0994789CB2B /* Pods-GradientsTests.release.xcconfig */,
+				009B35ED557790EB89904FD44378F9BF /* Pods-GradientsTests.modulemap */,
+				8B29CC72DC4C603F0B5964F8C8C6DC95 /* Pods-GradientsTests-acknowledgements.markdown */,
+				8259B05749E52F81353E952E7AEC939C /* Pods-GradientsTests-acknowledgements.plist */,
+				4DE1EF9A5D7CF86247C8274ECC434916 /* Pods-GradientsTests-dummy.m */,
+				2490232EA52EED71521FD4427C5A515F /* Pods-GradientsTests-Info.plist */,
+				4EF779CC9F0F3F34F1CCDD53BD41FA25 /* Pods-GradientsTests-umbrella.h */,
+				457F3AFD6A21D92690342370925D3D33 /* Pods-GradientsTests.debug.xcconfig */,
+				92D26B8D4666900F6250A302C289E828 /* Pods-GradientsTests.release.xcconfig */,
 			);
 			name = "Pods-GradientsTests";
 			path = "Target Support Files/Pods-GradientsTests";
-			sourceTree = "<group>";
-		};
-		143918143EE989057726BB9ACAD0B440 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5E698596F3A423F8F205D5610FEBF097 /* Pods_Gradients.framework */,
-				B5A2A67606E70A9B99165B61EE2A9899 /* Pods_Gradients_GradientsUITests.framework */,
-				0CAF48F34E0D69B9837C4702516BF610 /* Pods_GradientsTests.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -122,20 +191,74 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7CEEA590BA7C3D43A10A92AD4ED0CDF9 /* Pods-Gradients */ = {
+		752F13DED4210541302B1F6A5B784767 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2E41F571A5B59D89863481B2605B5C64 /* Pods-Gradients.modulemap */,
-				0A9044DAEDFD51AD8C64F51D84918E48 /* Pods-Gradients-acknowledgements.markdown */,
-				F628D78BB8F480B32F3AC89987EA8C37 /* Pods-Gradients-acknowledgements.plist */,
-				89B046D26E3B5EB894215B95E2186275 /* Pods-Gradients-dummy.m */,
-				F3E3CA625341497A3E37BCD64243AE8B /* Pods-Gradients-Info.plist */,
-				2E54771C5D4936F297A931DA8CC93909 /* Pods-Gradients-umbrella.h */,
-				24875BB8EEE05887DA2C8723DEB822AE /* Pods-Gradients.debug.xcconfig */,
-				995C9980752EA5366DE3E3886DED48D4 /* Pods-Gradients.release.xcconfig */,
+				A27657F7E9B4ED8E6A1447935E8FAADE /* Pods-Gradients */,
+				921E9AB9D4EC597DEB3E662BA894C9E6 /* Pods-Gradients-GradientsUITests */,
+				3A00A9EF55CFB054B54EEBDBEE83B17A /* Pods-GradientsTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		921E9AB9D4EC597DEB3E662BA894C9E6 /* Pods-Gradients-GradientsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2AB390918F9B38623A4780AD1D878EBF /* Pods-Gradients-GradientsUITests.modulemap */,
+				0D6D31555544F2E8F74DE1A14E204BEF /* Pods-Gradients-GradientsUITests-acknowledgements.markdown */,
+				B73B04D8059FBDE5F8DAA51E232FE892 /* Pods-Gradients-GradientsUITests-acknowledgements.plist */,
+				947B1FCC6C220298390DBAF51E6025E6 /* Pods-Gradients-GradientsUITests-dummy.m */,
+				BD3C5B413443765A48B1CFF3092AE0E1 /* Pods-Gradients-GradientsUITests-frameworks.sh */,
+				FAA2D0D2C3FCEEA50D55F0AE11AC2C31 /* Pods-Gradients-GradientsUITests-Info.plist */,
+				55CEDCCA7658A0248919C20256481E25 /* Pods-Gradients-GradientsUITests-umbrella.h */,
+				0F8EFA57ED497FEFE0EF3B5E21E547FD /* Pods-Gradients-GradientsUITests.debug.xcconfig */,
+				7EEBE61F53410AECF06C0F3E70C2C91D /* Pods-Gradients-GradientsUITests.release.xcconfig */,
+			);
+			name = "Pods-Gradients-GradientsUITests";
+			path = "Target Support Files/Pods-Gradients-GradientsUITests";
+			sourceTree = "<group>";
+		};
+		A27657F7E9B4ED8E6A1447935E8FAADE /* Pods-Gradients */ = {
+			isa = PBXGroup;
+			children = (
+				49812F6C75B8E07A3BA38039D064F635 /* Pods-Gradients.modulemap */,
+				612C0A2E3023CADC630EEB7CF579A7EC /* Pods-Gradients-acknowledgements.markdown */,
+				D7FCCAA8FBBE493B507B44F278E74FFD /* Pods-Gradients-acknowledgements.plist */,
+				66918B78DFC11990F7AE3FF3E567F2CF /* Pods-Gradients-dummy.m */,
+				7E11E522694283F42AEEABF182EF9723 /* Pods-Gradients-frameworks.sh */,
+				1F6CE3F63EB8F3A6D3DD8B875ACACA40 /* Pods-Gradients-Info.plist */,
+				1090776F54965F67EE71F93477056DB4 /* Pods-Gradients-umbrella.h */,
+				29045ED707B7B42493DB15AE24374CB8 /* Pods-Gradients.debug.xcconfig */,
+				634AA0DA833EBD5369492C2DD9051E18 /* Pods-Gradients.release.xcconfig */,
 			);
 			name = "Pods-Gradients";
 			path = "Target Support Files/Pods-Gradients";
+			sourceTree = "<group>";
+		};
+		AF3B8FFA0175528B5760F5852AE163F3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				60AD70F5CAA0302C7C020E977A54854A /* SwipeCellKit.modulemap */,
+				DDBBEA415A355B593C7AADA75A1F405E /* SwipeCellKit-dummy.m */,
+				675288082A30EA7D8D7F111AB44D86A2 /* SwipeCellKit-Info.plist */,
+				F30529E826C2CA81E58BDB6F7ECFAD1C /* SwipeCellKit-prefix.pch */,
+				1F40EC90551D5E2A1769FFBECDDD5D0D /* SwipeCellKit-umbrella.h */,
+				0E468EA807B171EAB0F3071DC11C9548 /* SwipeCellKit.debug.xcconfig */,
+				50325621779C5BD3FEBB10C0C3929A69 /* SwipeCellKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwipeCellKit";
+			sourceTree = "<group>";
+		};
+		C78A3B3C9CBBCF4AAE32FF6062EE5BCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E698596F3A423F8F205D5610FEBF097 /* Pods_Gradients.framework */,
+				B5A2A67606E70A9B99165B61EE2A9899 /* Pods_Gradients_GradientsUITests.framework */,
+				0CAF48F34E0D69B9837C4702516BF610 /* Pods_GradientsTests.framework */,
+				9D443E759FE97A6C0CA5A3B5E4142EBA /* SwipeCellKit.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -143,8 +266,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				143918143EE989057726BB9ACAD0B440 /* Products */,
-				EBAF36D5EF8FAB4ABA2D2E10385DA5ED /* Targets Support Files */,
+				E214FA7A70A848A1DAAC7393BC4A9B5D /* Pods */,
+				C78A3B3C9CBBCF4AAE32FF6062EE5BCB /* Products */,
+				752F13DED4210541302B1F6A5B784767 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,40 +280,69 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EBAF36D5EF8FAB4ABA2D2E10385DA5ED /* Targets Support Files */ = {
+		D75FCB517ED0C69DD1CE15208C955672 /* SwipeCellKit */ = {
 			isa = PBXGroup;
 			children = (
-				7CEEA590BA7C3D43A10A92AD4ED0CDF9 /* Pods-Gradients */,
-				FEC05C5D7AA7EDAB6272D91CC0A25084 /* Pods-Gradients-GradientsUITests */,
-				044C08587792DE2E38D930CFE96B62D8 /* Pods-GradientsTests */,
+				A6B9965F66906D396A97806F7C35A7BD /* Extensions.swift */,
+				91C332EB59EF16677CB30DA30FEE8271 /* Swipeable.swift */,
+				87F576ABDE6B3A1FD533E6461E81730E /* SwipeAccessibilityCustomAction.swift */,
+				CFAB44C13D91C4AA03E872A380DF9481 /* SwipeAction.swift */,
+				3E1B7D2E25639C505C9304AFC77EFD11 /* SwipeActionButton.swift */,
+				33C6793C105BF4BBDF7BCAE216C51538 /* SwipeActionsView.swift */,
+				92D51BE8ED05EE13E766E495F2677D47 /* SwipeActionTransitioning.swift */,
+				7B884B78B164AB62A113031935002CB8 /* SwipeAnimator.swift */,
+				0EBB74AE6140F721D1B52B84A31CDCC6 /* SwipeCollectionViewCell.swift */,
+				511030B1ACC66D02DFF032E7F6B3F41A /* SwipeCollectionViewCell+Accessibility.swift */,
+				D19EAF0B69D81000D2AF7DEBE41E96DE /* SwipeCollectionViewCell+Display.swift */,
+				0A11883F905F2FA3AE8234FE78AC2588 /* SwipeCollectionViewCellDelegate.swift */,
+				028B12F815F02FC277752D84702FD618 /* SwipeController.swift */,
+				3E4EE6E554DD264CA738D74AD4BFFA1F /* SwipeExpanding.swift */,
+				CCC1B4A12BD5CB0CD0C348EFE9CF5DED /* SwipeExpansionStyle.swift */,
+				E55D566EE14CF3196537D335011E254F /* SwipeFeedback.swift */,
+				3FE18C345CED420E968082C553DA557A /* SwipeOptions.swift */,
+				66F17491CB8ABCE368096944D103FD55 /* SwipeTableViewCell.swift */,
+				37757062654713386EB742BFE1509C40 /* SwipeTableViewCell+Accessibility.swift */,
+				668EB2DBC629EF0C2A936AE5E1213578 /* SwipeTableViewCell+Display.swift */,
+				597742AC28C6F782DF3216E0B16E63C7 /* SwipeTableViewCellDelegate.swift */,
+				F99A573D410DFD70C818A0CABE74766B /* SwipeTransitionLayout.swift */,
+				AF3B8FFA0175528B5760F5852AE163F3 /* Support Files */,
 			);
-			name = "Targets Support Files";
+			name = SwipeCellKit;
+			path = SwipeCellKit;
 			sourceTree = "<group>";
 		};
-		FEC05C5D7AA7EDAB6272D91CC0A25084 /* Pods-Gradients-GradientsUITests */ = {
+		E214FA7A70A848A1DAAC7393BC4A9B5D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E5A0409D96B4BF48E65AAA536F226DBF /* Pods-Gradients-GradientsUITests.modulemap */,
-				1718B49912E1CD89EA6F6047B8F678C1 /* Pods-Gradients-GradientsUITests-acknowledgements.markdown */,
-				D56CF5D8B133A135EA64EFDD364EC9B4 /* Pods-Gradients-GradientsUITests-acknowledgements.plist */,
-				7275D390C06C1EDD2EAE9BEBC4920E11 /* Pods-Gradients-GradientsUITests-dummy.m */,
-				F6301916C973DF8039CB1FC69CA6E8A5 /* Pods-Gradients-GradientsUITests-Info.plist */,
-				6ECE676639EEC46DF58417F89F89CC54 /* Pods-Gradients-GradientsUITests-umbrella.h */,
-				9084E3AF0B6CE9D3760854DD97B3188B /* Pods-Gradients-GradientsUITests.debug.xcconfig */,
-				D5869AEAC667B666FEBEE1A2952D5344 /* Pods-Gradients-GradientsUITests.release.xcconfig */,
+				D75FCB517ED0C69DD1CE15208C955672 /* SwipeCellKit */,
 			);
-			name = "Pods-Gradients-GradientsUITests";
-			path = "Target Support Files/Pods-Gradients-GradientsUITests";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9DC69F1CFD1829145DA6D7663BBA77EF /* Headers */ = {
+		0DDF53E621B22D37091653832FABB8A1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93547B2C62176A584B6F4F7F35A453D1 /* Pods-Gradients-GradientsUITests-umbrella.h in Headers */,
+				7A9C49CDF8C8D4C36AD2121201A40D27 /* Pods-Gradients-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50372D7EF29803EB160636A1E77A8CA3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77B80B1AF5452E5544C84C319F9895C6 /* SwipeCellKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ED34389D8537E3997B7C144B12191F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5790E2A95F7975FA5362342326E7BFD9 /* Pods-Gradients-GradientsUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,29 +354,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9D6D8990E580747F187D4FB2DFA33C1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				631E6FF2C34614B7252291D107D204A1 /* Pods-Gradients-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3E18613416185CDADAE251716A7BB075 /* Pods-Gradients */ = {
+		1DE44C23B82E6671E9E1541D06DE0E87 /* SwipeCellKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6C57680CE2DCA1EC1B60BB5924D8718E /* Build configuration list for PBXNativeTarget "Pods-Gradients" */;
+			buildConfigurationList = 7296479798A25194BEEAD8C2852CDC99 /* Build configuration list for PBXNativeTarget "SwipeCellKit" */;
 			buildPhases = (
-				D9D6D8990E580747F187D4FB2DFA33C1 /* Headers */,
-				BA312ABB44B0C5D1ED7B006C0DF5E14D /* Sources */,
-				0D9D9F592393148DB61481AEBB2921FD /* Frameworks */,
-				473C86D55D09F519A0A70A8ACE1001B8 /* Resources */,
+				50372D7EF29803EB160636A1E77A8CA3 /* Headers */,
+				C07B88008CA21CD451A7B5F73AD27E2D /* Sources */,
+				EDBEDF442462D623C30146E6B225FD44 /* Frameworks */,
+				470E5422AA31FA9A402A1DC0BD314F6E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = SwipeCellKit;
+			productName = SwipeCellKit;
+			productReference = 9D443E759FE97A6C0CA5A3B5E4142EBA /* SwipeCellKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3E18613416185CDADAE251716A7BB075 /* Pods-Gradients */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 205347205D503E2E5E705ACEFD89C288 /* Build configuration list for PBXNativeTarget "Pods-Gradients" */;
+			buildPhases = (
+				0DDF53E621B22D37091653832FABB8A1 /* Headers */,
+				AC99F33FA023EB8C88A65DD2066865CA /* Sources */,
+				E9C453E91E1C9063D65640D8B2654F86 /* Frameworks */,
+				0BAD8EF5561AB363FA0B0B1D4126218F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83D8A4EB3368B37D06EFD7993C7CA774 /* PBXTargetDependency */,
 			);
 			name = "Pods-Gradients";
 			productName = "Pods-Gradients";
@@ -242,7 +406,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A7B80D268678F065A5842BA42713418F /* PBXTargetDependency */,
+				E63DFDF77B9E6490DECAAF55AEDA4F50 /* PBXTargetDependency */,
 			);
 			name = "Pods-GradientsTests";
 			productName = "Pods-GradientsTests";
@@ -251,16 +415,17 @@
 		};
 		E7ABF8F34E1AC0AF68B6B82AB6D961B2 /* Pods-Gradients-GradientsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B629691DE46BE7E802A91AD4D070F3D /* Build configuration list for PBXNativeTarget "Pods-Gradients-GradientsUITests" */;
+			buildConfigurationList = FDB50C3739185EEE5F8A763FF8BCA13B /* Build configuration list for PBXNativeTarget "Pods-Gradients-GradientsUITests" */;
 			buildPhases = (
-				9DC69F1CFD1829145DA6D7663BBA77EF /* Headers */,
-				9EB67DDCFC9D09EF990446F870B58590 /* Sources */,
-				272686CBF1CBFA8B831926694A03DD3B /* Frameworks */,
-				D40C7AC7ED03F94FB2B94974B1BBB68D /* Resources */,
+				5ED34389D8537E3997B7C144B12191F0 /* Headers */,
+				E42074BD9A2B251786BD398E734A7B23 /* Sources */,
+				94709A02836996D113E6C85EA5A8F2A0 /* Frameworks */,
+				F313C830CA5E1CAEEFEECF6912F67B82 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				036F95ABA5D91BB615325A94799B2B0A /* PBXTargetDependency */,
 			);
 			name = "Pods-Gradients-GradientsUITests";
 			productName = "Pods-Gradients-GradientsUITests";
@@ -285,26 +450,27 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 143918143EE989057726BB9ACAD0B440 /* Products */;
+			productRefGroup = C78A3B3C9CBBCF4AAE32FF6062EE5BCB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				3E18613416185CDADAE251716A7BB075 /* Pods-Gradients */,
 				E7ABF8F34E1AC0AF68B6B82AB6D961B2 /* Pods-Gradients-GradientsUITests */,
 				DE0B39F5778C8F34636F99B66000C4A7 /* Pods-GradientsTests */,
+				1DE44C23B82E6671E9E1541D06DE0E87 /* SwipeCellKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		473C86D55D09F519A0A70A8ACE1001B8 /* Resources */ = {
+		0BAD8EF5561AB363FA0B0B1D4126218F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D40C7AC7ED03F94FB2B94974B1BBB68D /* Resources */ = {
+		470E5422AA31FA9A402A1DC0BD314F6E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -318,14 +484,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F313C830CA5E1CAEEFEECF6912F67B82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9EB67DDCFC9D09EF990446F870B58590 /* Sources */ = {
+		AC99F33FA023EB8C88A65DD2066865CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96B6F2E07DB9526E7A13F4D748F60A14 /* Pods-Gradients-GradientsUITests-dummy.m in Sources */,
+				C5CD221BDB095C7101496E5A5425BCE7 /* Pods-Gradients-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,26 +510,102 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BA312ABB44B0C5D1ED7B006C0DF5E14D /* Sources */ = {
+		C07B88008CA21CD451A7B5F73AD27E2D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB8A9992D614D368885DADA17776C648 /* Pods-Gradients-dummy.m in Sources */,
+				9D94E9855EB48604692E0A6EA874541D /* Extensions.swift in Sources */,
+				5F29D68FABD1DBFB2CE81CD0EEB8C717 /* Swipeable.swift in Sources */,
+				D0549E548B8DC5D7A4BACB8E96C9D441 /* SwipeAccessibilityCustomAction.swift in Sources */,
+				D6DFB1257A5B7662A05ABB0983A2715D /* SwipeAction.swift in Sources */,
+				98FD4EE4D50D5431B633D2CFE35E6490 /* SwipeActionButton.swift in Sources */,
+				683808AB342CD6D4B49238896FA41A89 /* SwipeActionsView.swift in Sources */,
+				4C09DF4559F1ED92F2D5FCF68B9533BB /* SwipeActionTransitioning.swift in Sources */,
+				93DE825E02AB8DD74859BF5124306CE1 /* SwipeAnimator.swift in Sources */,
+				A90D490E57A38E6C83DC0A626E316834 /* SwipeCellKit-dummy.m in Sources */,
+				D11C8923B0451C47BA946C43CA7B3CC3 /* SwipeCollectionViewCell+Accessibility.swift in Sources */,
+				37B21598D79AAB24127E025FD2915CAB /* SwipeCollectionViewCell+Display.swift in Sources */,
+				AE26D355E9E86F3079A48C29C7AD3D82 /* SwipeCollectionViewCell.swift in Sources */,
+				C8D0704B2906CB54EE63116317370DE4 /* SwipeCollectionViewCellDelegate.swift in Sources */,
+				DB3DAAA9D1BB76ECD1CD6D702D6A2887 /* SwipeController.swift in Sources */,
+				A465A69E28DDC33494F2D7B235CDB4CD /* SwipeExpanding.swift in Sources */,
+				2AE1CB979809662C29C04D3F00B62259 /* SwipeExpansionStyle.swift in Sources */,
+				6D511F288B33A0B110DD241009EADDF3 /* SwipeFeedback.swift in Sources */,
+				E514C59F3A036397E120B3D7E7E848A1 /* SwipeOptions.swift in Sources */,
+				D147BCBC15708326CA8DF3A9EB465E51 /* SwipeTableViewCell+Accessibility.swift in Sources */,
+				A827AC7E2BF92ED0BF5C9254FA3CE2CA /* SwipeTableViewCell+Display.swift in Sources */,
+				673675F0D1021CC1AFC87DDDB66F3280 /* SwipeTableViewCell.swift in Sources */,
+				7B5FEBC758BE2C3E569600DFA545E083 /* SwipeTableViewCellDelegate.swift in Sources */,
+				7CFF7CEAACD1B839D0949659B0A983CC /* SwipeTransitionLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E42074BD9A2B251786BD398E734A7B23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE42A919C6D064C9EF9FEADCF32ED9E1 /* Pods-Gradients-GradientsUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A7B80D268678F065A5842BA42713418F /* PBXTargetDependency */ = {
+		036F95ABA5D91BB615325A94799B2B0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwipeCellKit;
+			target = 1DE44C23B82E6671E9E1541D06DE0E87 /* SwipeCellKit */;
+			targetProxy = 675BE8E4EE7280E85DECDB48D0F997FC /* PBXContainerItemProxy */;
+		};
+		83D8A4EB3368B37D06EFD7993C7CA774 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwipeCellKit;
+			target = 1DE44C23B82E6671E9E1541D06DE0E87 /* SwipeCellKit */;
+			targetProxy = F470EC21164887072A622D50CF632E47 /* PBXContainerItemProxy */;
+		};
+		E63DFDF77B9E6490DECAAF55AEDA4F50 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Gradients";
 			target = 3E18613416185CDADAE251716A7BB075 /* Pods-Gradients */;
-			targetProxy = E6A3DD583285131E502F56CFE83AFB67 /* PBXContainerItemProxy */;
+			targetProxy = 22EE43DD2D12DE4F2ED615170083C605 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1B8F9C03B94FBF4C772EF28C74F2D393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E468EA807B171EAB0F3071DC11C9548 /* SwipeCellKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwipeCellKit/SwipeCellKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwipeCellKit/SwipeCellKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwipeCellKit/SwipeCellKit.modulemap";
+				PRODUCT_MODULE_NAME = SwipeCellKit;
+				PRODUCT_NAME = SwipeCellKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		3C87802ED624276931A55423E7ED3281 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -424,7 +673,7 @@
 		};
 		3D7D4EC27302A26986B53E3932A13E72 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF34464D44AEA34776C2B0994789CB2B /* Pods-GradientsTests.release.xcconfig */;
+			baseConfigurationReference = 92D26B8D4666900F6250A302C289E828 /* Pods-GradientsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -460,9 +709,47 @@
 			};
 			name = Release;
 		};
+		4890B2ABF1E8F2D0DDAD7998FD299B27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EEBE61F53410AECF06C0F3E70C2C91D /* Pods-Gradients-GradientsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Gradients-GradientsUITests/Pods-Gradients-GradientsUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Gradients-GradientsUITests/Pods-Gradients-GradientsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		6A3EA1C62BA3DB32001A3AB06B75688B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E16BA574B73A6DC6BC731D499B416FC /* Pods-GradientsTests.debug.xcconfig */;
+			baseConfigurationReference = 457F3AFD6A21D92690342370925D3D33 /* Pods-GradientsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -497,9 +784,81 @@
 			};
 			name = Debug;
 		};
-		91E2DFDACD557D76F3B04E771B1A0F23 /* Debug */ = {
+		70C3AB283947CDA73739E37610D10B89 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24875BB8EEE05887DA2C8723DEB822AE /* Pods-Gradients.debug.xcconfig */;
+			baseConfigurationReference = 0F8EFA57ED497FEFE0EF3B5E21E547FD /* Pods-Gradients-GradientsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Gradients-GradientsUITests/Pods-Gradients-GradientsUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Gradients-GradientsUITests/Pods-Gradients-GradientsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7A98F07E969F57F157440D4396BBE7D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50325621779C5BD3FEBB10C0C3929A69 /* SwipeCellKit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwipeCellKit/SwipeCellKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwipeCellKit/SwipeCellKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwipeCellKit/SwipeCellKit.modulemap";
+				PRODUCT_MODULE_NAME = SwipeCellKit;
+				PRODUCT_NAME = SwipeCellKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ACFD37062D5516C4461933B24CA6C32B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29045ED707B7B42493DB15AE24374CB8 /* Pods-Gradients.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -534,9 +893,9 @@
 			};
 			name = Debug;
 		};
-		CC6CAB90C55EE6DDCC02FB9A7FEA0FDF /* Release */ = {
+		B778D85FE73C2BFF8F5E701A20D12351 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5869AEAC667B666FEBEE1A2952D5344 /* Pods-Gradients-GradientsUITests.release.xcconfig */;
+			baseConfigurationReference = 634AA0DA833EBD5369492C2DD9051E18 /* Pods-Gradients.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -548,7 +907,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Gradients-GradientsUITests/Pods-Gradients-GradientsUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Gradients/Pods-Gradients-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -557,7 +916,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Gradients-GradientsUITests/Pods-Gradients-GradientsUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Gradients/Pods-Gradients.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -571,43 +930,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		DC66EDAC31252215E34C8834B9C270D8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9084E3AF0B6CE9D3760854DD97B3188B /* Pods-Gradients-GradientsUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Gradients-GradientsUITests/Pods-Gradients-GradientsUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Gradients-GradientsUITests/Pods-Gradients-GradientsUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		E43251CBD580DF32B56A879146674A66 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -670,44 +992,6 @@
 			};
 			name = Release;
 		};
-		F0EADD6D03FA06F0AE7B620A02F77199 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 995C9980752EA5366DE3E3886DED48D4 /* Pods-Gradients.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Gradients/Pods-Gradients-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Gradients/Pods-Gradients.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -716,6 +1000,15 @@
 			buildConfigurations = (
 				6A3EA1C62BA3DB32001A3AB06B75688B /* Debug */,
 				3D7D4EC27302A26986B53E3932A13E72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		205347205D503E2E5E705ACEFD89C288 /* Build configuration list for PBXNativeTarget "Pods-Gradients" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACFD37062D5516C4461933B24CA6C32B /* Debug */,
+				B778D85FE73C2BFF8F5E701A20D12351 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -729,20 +1022,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6C57680CE2DCA1EC1B60BB5924D8718E /* Build configuration list for PBXNativeTarget "Pods-Gradients" */ = {
+		7296479798A25194BEEAD8C2852CDC99 /* Build configuration list for PBXNativeTarget "SwipeCellKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				91E2DFDACD557D76F3B04E771B1A0F23 /* Debug */,
-				F0EADD6D03FA06F0AE7B620A02F77199 /* Release */,
+				1B8F9C03B94FBF4C772EF28C74F2D393 /* Debug */,
+				7A98F07E969F57F157440D4396BBE7D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B629691DE46BE7E802A91AD4D070F3D /* Build configuration list for PBXNativeTarget "Pods-Gradients-GradientsUITests" */ = {
+		FDB50C3739185EEE5F8A763FF8BCA13B /* Build configuration list for PBXNativeTarget "Pods-Gradients-GradientsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DC66EDAC31252215E34C8834B9C270D8 /* Debug */,
-				CC6CAB90C55EE6DDCC02FB9A7FEA0FDF /* Release */,
+				70C3AB283947CDA73739E37610D10B89 /* Debug */,
+				4890B2ABF1E8F2D0DDAD7998FD299B27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

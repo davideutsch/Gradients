@@ -3,20 +3,58 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4B54417407407AE0F0A6CEE4 /* Pods_Gradients.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B19C5A0082C2D4D7BE64AB7 /* Pods_Gradients.framework */; };
+		B8017C1B2568866600BD2693 /* AddNewColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8017C1A2568866600BD2693 /* AddNewColorCell.xib */; };
 		B898C4DD255AC4600082582B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898C4DC255AC4600082582B /* AppDelegate.swift */; };
 		B898C4DF255AC4600082582B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898C4DE255AC4600082582B /* SceneDelegate.swift */; };
-		B898C4E1255AC4600082582B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898C4E0255AC4600082582B /* ViewController.swift */; };
 		B898C4E4255AC4600082582B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B898C4E2255AC4600082582B /* Main.storyboard */; };
 		B898C4E7255AC4600082582B /* Gradients.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B898C4E5255AC4600082582B /* Gradients.xcdatamodeld */; };
 		B898C4E9255AC4620082582B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B898C4E8255AC4620082582B /* Assets.xcassets */; };
 		B898C4EC255AC4620082582B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B898C4EA255AC4620082582B /* LaunchScreen.storyboard */; };
 		B898C4F7255AC4620082582B /* GradientsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898C4F6255AC4620082582B /* GradientsTests.swift */; };
 		B898C502255AC4620082582B /* GradientsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B898C501255AC4620082582B /* GradientsUITests.swift */; };
+		B89E511F255ADF2700E8CC65 /* ConcertOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B89E511E255ADF2700E8CC65 /* ConcertOne-Regular.ttf */; };
+		B89E5120255ADF2700E8CC65 /* ConcertOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B89E511E255ADF2700E8CC65 /* ConcertOne-Regular.ttf */; };
+		B89E5121255ADF2700E8CC65 /* ConcertOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B89E511E255ADF2700E8CC65 /* ConcertOne-Regular.ttf */; };
+		B89E5126255ADF3700E8CC65 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B89E5125255ADF3700E8CC65 /* Montserrat-Bold.ttf */; };
+		B89E5127255ADF3700E8CC65 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B89E5125255ADF3700E8CC65 /* Montserrat-Bold.ttf */; };
+		B89E5128255ADF3700E8CC65 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B89E5125255ADF3700E8CC65 /* Montserrat-Bold.ttf */; };
+		B89E5130255ADF4400E8CC65 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B89E512F255ADF4400E8CC65 /* Montserrat-Regular.ttf */; };
+		B89E5131255ADF4400E8CC65 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B89E512F255ADF4400E8CC65 /* Montserrat-Regular.ttf */; };
+		B89E5132255ADF4400E8CC65 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B89E512F255ADF4400E8CC65 /* Montserrat-Regular.ttf */; };
+		B8B62D63256712CA003BF656 /* ExportSlideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8B62D62256712CA003BF656 /* ExportSlideView.xib */; };
+		B8B62D6F25671C6C003BF656 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B62D6E25671C6C003BF656 /* PresentationController.swift */; };
+		B8B62D7325671CEC003BF656 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBC9D255B70F3009290E4 /* ImageSaver.swift */; };
+		B8B62D7425671CEC003BF656 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBC9D255B70F3009290E4 /* ImageSaver.swift */; };
+		B8B62D96256722E7003BF656 /* ExportSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B62D95256722E7003BF656 /* ExportSlideViewController.swift */; };
+		B8B62DA42567C5E9003BF656 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B62DA32567C5E9003BF656 /* Gradient.swift */; };
+		B8BDBC92255AE9E0009290E4 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBC91255AE9E0009290E4 /* CreateViewController.swift */; };
+		B8BDBC9E255B70F3009290E4 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBC9D255B70F3009290E4 /* ImageSaver.swift */; };
+		B8BDBCAA255BDF0B009290E4 /* SelectedColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBCA9255BDF0B009290E4 /* SelectedColor.swift */; };
+		B8BDBCAB255BDF0B009290E4 /* SelectedColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBCA9255BDF0B009290E4 /* SelectedColor.swift */; };
+		B8BDBCAC255BDF0B009290E4 /* SelectedColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBCA9255BDF0B009290E4 /* SelectedColor.swift */; };
+		B8BDBCB5255BE4E5009290E4 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBCB3255BE4E5009290E4 /* ColorCell.swift */; };
+		B8BDBCB6255BE4E5009290E4 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBCB3255BE4E5009290E4 /* ColorCell.swift */; };
+		B8BDBCB7255BE4E5009290E4 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBCB3255BE4E5009290E4 /* ColorCell.swift */; };
+		B8BDBCB8255BE4E5009290E4 /* ColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8BDBCB4255BE4E5009290E4 /* ColorCell.xib */; };
+		B8BDBCB9255BE4E5009290E4 /* ColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8BDBCB4255BE4E5009290E4 /* ColorCell.xib */; };
+		B8BDBCBA255BE4E5009290E4 /* ColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8BDBCB4255BE4E5009290E4 /* ColorCell.xib */; };
+		B8BDBCC0255C52F1009290E4 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBCBF255C52F1009290E4 /* ColorHelper.swift */; };
+		B8BDBCC1255C52F2009290E4 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBCBF255C52F1009290E4 /* ColorHelper.swift */; };
+		B8BDBCC2255C52F2009290E4 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBCBF255C52F1009290E4 /* ColorHelper.swift */; };
+		B8BDBCCB255CAABE009290E4 /* AddNewColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBCC9255CAABD009290E4 /* AddNewColorCell.swift */; };
+		B8BDBCCC255CAABE009290E4 /* AddNewColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBCC9255CAABD009290E4 /* AddNewColorCell.swift */; };
+		B8BDBCCD255CAABF009290E4 /* AddNewColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBCC9255CAABD009290E4 /* AddNewColorCell.swift */; };
+		B8BDBCD5255DB471009290E4 /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBCD4255DB470009290E4 /* ExportViewController.swift */; };
+		B8BDBCD6255DB471009290E4 /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBCD4255DB470009290E4 /* ExportViewController.swift */; };
+		B8BDBCD7255DB471009290E4 /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBCD4255DB470009290E4 /* ExportViewController.swift */; };
+		B8F171D02561E48700D8F749 /* SelectColorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8F171CF2561E48700D8F749 /* SelectColorView.xib */; };
+		B8F17220256299EE00D8F749 /* ExportViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1721F256299EE00D8F749 /* ExportViewTest.swift */; };
+		B8F1723225648D1500D8F749 /* ExportSubViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1723125648D1500D8F749 /* ExportSubViewTest.swift */; };
 		DB234EB29EB3F5B06A670792 /* Pods_Gradients_GradientsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B929FCA32AEBD1D9076A75 /* Pods_Gradients_GradientsUITests.framework */; };
 		E1CF73F66CAE0364635F097A /* Pods_GradientsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08116BF82F09C1C0774C8AE /* Pods_GradientsTests.framework */; };
 /* End PBXBuildFile section */
@@ -44,10 +82,10 @@
 		785C8490863479048CF7B995 /* Pods-GradientsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GradientsTests.debug.xcconfig"; path = "Target Support Files/Pods-GradientsTests/Pods-GradientsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B19C5A0082C2D4D7BE64AB7 /* Pods_Gradients.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gradients.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B929FCA32AEBD1D9076A75 /* Pods_Gradients_GradientsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gradients_GradientsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8017C1A2568866600BD2693 /* AddNewColorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewColorCell.xib; sourceTree = "<group>"; };
 		B898C4D9255AC4600082582B /* Gradients.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gradients.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B898C4DC255AC4600082582B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B898C4DE255AC4600082582B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B898C4E0255AC4600082582B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B898C4E3255AC4600082582B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B898C4E6255AC4600082582B /* Gradients.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gradients.xcdatamodel; sourceTree = "<group>"; };
 		B898C4E8255AC4620082582B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +97,24 @@
 		B898C4FD255AC4620082582B /* GradientsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradientsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B898C501255AC4620082582B /* GradientsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientsUITests.swift; sourceTree = "<group>"; };
 		B898C503255AC4620082582B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B89E511E255ADF2700E8CC65 /* ConcertOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ConcertOne-Regular.ttf"; sourceTree = "<group>"; };
+		B89E5125255ADF3700E8CC65 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		B89E512F255ADF4400E8CC65 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		B8B62D62256712CA003BF656 /* ExportSlideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExportSlideView.xib; sourceTree = "<group>"; };
+		B8B62D6E25671C6C003BF656 /* PresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
+		B8B62D95256722E7003BF656 /* ExportSlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportSlideViewController.swift; sourceTree = "<group>"; };
+		B8B62DA32567C5E9003BF656 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		B8BDBC91255AE9E0009290E4 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		B8BDBC9D255B70F3009290E4 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		B8BDBCA9255BDF0B009290E4 /* SelectedColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedColor.swift; sourceTree = "<group>"; };
+		B8BDBCB3255BE4E5009290E4 /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
+		B8BDBCB4255BE4E5009290E4 /* ColorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorCell.xib; sourceTree = "<group>"; };
+		B8BDBCBF255C52F1009290E4 /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
+		B8BDBCC9255CAABD009290E4 /* AddNewColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewColorCell.swift; sourceTree = "<group>"; };
+		B8BDBCD4255DB470009290E4 /* ExportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportViewController.swift; sourceTree = "<group>"; };
+		B8F171CF2561E48700D8F749 /* SelectColorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectColorView.xib; sourceTree = "<group>"; };
+		B8F1721F256299EE00D8F749 /* ExportViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportViewTest.swift; sourceTree = "<group>"; };
+		B8F1723125648D1500D8F749 /* ExportSubViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportSubViewTest.swift; sourceTree = "<group>"; };
 		CC69EC56D99A7BCB0171F0E8 /* Pods-Gradients.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gradients.release.xcconfig"; path = "Target Support Files/Pods-Gradients/Pods-Gradients.release.xcconfig"; sourceTree = "<group>"; };
 		D11B620A873A6E548861DEBC /* Pods-Gradients.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gradients.debug.xcconfig"; path = "Target Support Files/Pods-Gradients/Pods-Gradients.debug.xcconfig"; sourceTree = "<group>"; };
 		DAAB012C7C4EB9C9A96956D3 /* Pods-Gradients-GradientsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gradients-GradientsUITests.release.xcconfig"; path = "Target Support Files/Pods-Gradients-GradientsUITests/Pods-Gradients-GradientsUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,12 +184,14 @@
 		B898C4DB255AC4600082582B /* Gradients */ = {
 			isa = PBXGroup;
 			children = (
+				B8BDBCBE255C52DA009290E4 /* Helper */,
+				B8BDBC8D255AE9B5009290E4 /* Controller */,
+				B8BDBC8C255AE9A8009290E4 /* View */,
+				B8BDBC8B255AE9A2009290E4 /* Model */,
+				B89E511D255ADF0C00E8CC65 /* fonts */,
 				B898C4DC255AC4600082582B /* AppDelegate.swift */,
 				B898C4DE255AC4600082582B /* SceneDelegate.swift */,
-				B898C4E0255AC4600082582B /* ViewController.swift */,
-				B898C4E2255AC4600082582B /* Main.storyboard */,
 				B898C4E8255AC4620082582B /* Assets.xcassets */,
-				B898C4EA255AC4620082582B /* LaunchScreen.storyboard */,
 				B898C4ED255AC4620082582B /* Info.plist */,
 				B898C4E5255AC4600082582B /* Gradients.xcdatamodeld */,
 			);
@@ -158,6 +216,86 @@
 			path = GradientsUITests;
 			sourceTree = "<group>";
 		};
+		B89E511D255ADF0C00E8CC65 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B89E512F255ADF4400E8CC65 /* Montserrat-Regular.ttf */,
+				B89E5125255ADF3700E8CC65 /* Montserrat-Bold.ttf */,
+				B89E511E255ADF2700E8CC65 /* ConcertOne-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		B8B62D6725671A3B003BF656 /* Falsch */ = {
+			isa = PBXGroup;
+			children = (
+				B8F1723125648D1500D8F749 /* ExportSubViewTest.swift */,
+				B8F1721F256299EE00D8F749 /* ExportViewTest.swift */,
+			);
+			path = Falsch;
+			sourceTree = "<group>";
+		};
+		B8B62DAB25688491003BF656 /* ListItems */ = {
+			isa = PBXGroup;
+			children = (
+				B8017C1A2568866600BD2693 /* AddNewColorCell.xib */,
+				B8BDBCB3255BE4E5009290E4 /* ColorCell.swift */,
+				B8BDBCB4255BE4E5009290E4 /* ColorCell.xib */,
+				B8BDBCC9255CAABD009290E4 /* AddNewColorCell.swift */,
+			);
+			path = ListItems;
+			sourceTree = "<group>";
+		};
+		B8BDBC8B255AE9A2009290E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B8BDBCA9255BDF0B009290E4 /* SelectedColor.swift */,
+				B8B62DA32567C5E9003BF656 /* Gradient.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B8BDBC8C255AE9A8009290E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B898C4EA255AC4620082582B /* LaunchScreen.storyboard */,
+				B898C4E2255AC4600082582B /* Main.storyboard */,
+				B8B62D62256712CA003BF656 /* ExportSlideView.xib */,
+				B8B62D6725671A3B003BF656 /* Falsch */,
+				B8F171C62561E46800D8F749 /* SelectColor */,
+				B8B62DAB25688491003BF656 /* ListItems */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B8BDBC8D255AE9B5009290E4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B8BDBC91255AE9E0009290E4 /* CreateViewController.swift */,
+				B8BDBCD4255DB470009290E4 /* ExportViewController.swift */,
+				B8B62D95256722E7003BF656 /* ExportSlideViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B8BDBCBE255C52DA009290E4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B8B62D6E25671C6C003BF656 /* PresentationController.swift */,
+				B8BDBC9D255B70F3009290E4 /* ImageSaver.swift */,
+				B8BDBCBF255C52F1009290E4 /* ColorHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B8F171C62561E46800D8F749 /* SelectColor */ = {
+			isa = PBXGroup;
+			children = (
+				B8F171CF2561E48700D8F749 /* SelectColorView.xib */,
+			);
+			path = SelectColor;
+			sourceTree = "<group>";
+		};
 		FA84F1022293E7DF9B56844B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +306,6 @@
 				785C8490863479048CF7B995 /* Pods-GradientsTests.debug.xcconfig */,
 				4E66BBA2376B2645C180BCF4 /* Pods-GradientsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -183,6 +320,7 @@
 				B898C4D5255AC45F0082582B /* Sources */,
 				B898C4D6255AC45F0082582B /* Frameworks */,
 				B898C4D7255AC45F0082582B /* Resources */,
+				DE9D6F48C35EF0CF5381D57D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +358,7 @@
 				B898C4F9255AC4620082582B /* Sources */,
 				B898C4FA255AC4620082582B /* Frameworks */,
 				B898C4FB255AC4620082582B /* Resources */,
+				A625CB604C3B1C683B98D9CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -278,9 +417,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B89E5130255ADF4400E8CC65 /* Montserrat-Regular.ttf in Resources */,
+				B89E5126255ADF3700E8CC65 /* Montserrat-Bold.ttf in Resources */,
+				B8F171D02561E48700D8F749 /* SelectColorView.xib in Resources */,
 				B898C4EC255AC4620082582B /* LaunchScreen.storyboard in Resources */,
+				B8017C1B2568866600BD2693 /* AddNewColorCell.xib in Resources */,
+				B89E511F255ADF2700E8CC65 /* ConcertOne-Regular.ttf in Resources */,
 				B898C4E9255AC4620082582B /* Assets.xcassets in Resources */,
 				B898C4E4255AC4600082582B /* Main.storyboard in Resources */,
+				B8BDBCB8255BE4E5009290E4 /* ColorCell.xib in Resources */,
+				B8B62D63256712CA003BF656 /* ExportSlideView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +434,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B89E5131255ADF4400E8CC65 /* Montserrat-Regular.ttf in Resources */,
+				B8BDBCB9255BE4E5009290E4 /* ColorCell.xib in Resources */,
+				B89E5127255ADF3700E8CC65 /* Montserrat-Bold.ttf in Resources */,
+				B89E5120255ADF2700E8CC65 /* ConcertOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +445,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B89E5132255ADF4400E8CC65 /* Montserrat-Regular.ttf in Resources */,
+				B8BDBCBA255BE4E5009290E4 /* ColorCell.xib in Resources */,
+				B89E5128255ADF3700E8CC65 /* Montserrat-Bold.ttf in Resources */,
+				B89E5121255ADF2700E8CC65 /* ConcertOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +499,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A625CB604C3B1C683B98D9CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gradients-GradientsUITests/Pods-Gradients-GradientsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gradients-GradientsUITests/Pods-Gradients-GradientsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gradients-GradientsUITests/Pods-Gradients-GradientsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE9D6F48C35EF0CF5381D57D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gradients/Pods-Gradients-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gradients/Pods-Gradients-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gradients/Pods-Gradients-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EC8CE1B511282EBB7EF7953B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -374,10 +562,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B898C4E1255AC4600082582B /* ViewController.swift in Sources */,
+				B8BDBC92255AE9E0009290E4 /* CreateViewController.swift in Sources */,
 				B898C4DD255AC4600082582B /* AppDelegate.swift in Sources */,
+				B8BDBCB5255BE4E5009290E4 /* ColorCell.swift in Sources */,
+				B8BDBCC0255C52F1009290E4 /* ColorHelper.swift in Sources */,
+				B8F1723225648D1500D8F749 /* ExportSubViewTest.swift in Sources */,
+				B8B62DA42567C5E9003BF656 /* Gradient.swift in Sources */,
+				B8F17220256299EE00D8F749 /* ExportViewTest.swift in Sources */,
+				B8BDBCD5255DB471009290E4 /* ExportViewController.swift in Sources */,
+				B8BDBCAA255BDF0B009290E4 /* SelectedColor.swift in Sources */,
+				B8B62D6F25671C6C003BF656 /* PresentationController.swift in Sources */,
+				B8BDBC9E255B70F3009290E4 /* ImageSaver.swift in Sources */,
+				B8B62D96256722E7003BF656 /* ExportSlideViewController.swift in Sources */,
 				B898C4DF255AC4600082582B /* SceneDelegate.swift in Sources */,
 				B898C4E7255AC4600082582B /* Gradients.xcdatamodeld in Sources */,
+				B8BDBCCB255CAABE009290E4 /* AddNewColorCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +584,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8BDBCAB255BDF0B009290E4 /* SelectedColor.swift in Sources */,
 				B898C4F7255AC4620082582B /* GradientsTests.swift in Sources */,
+				B8BDBCD6255DB471009290E4 /* ExportViewController.swift in Sources */,
+				B8B62D7425671CEC003BF656 /* ImageSaver.swift in Sources */,
+				B8BDBCB6255BE4E5009290E4 /* ColorCell.swift in Sources */,
+				B8BDBCCC255CAABE009290E4 /* AddNewColorCell.swift in Sources */,
+				B8BDBCC1255C52F2009290E4 /* ColorHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +598,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8BDBCAC255BDF0B009290E4 /* SelectedColor.swift in Sources */,
 				B898C502255AC4620082582B /* GradientsUITests.swift in Sources */,
+				B8BDBCD7255DB471009290E4 /* ExportViewController.swift in Sources */,
+				B8B62D7325671CEC003BF656 /* ImageSaver.swift in Sources */,
+				B8BDBCB7255BE4E5009290E4 /* ColorCell.swift in Sources */,
+				B8BDBCCD255CAABF009290E4 /* AddNewColorCell.swift in Sources */,
+				B8BDBCC2255C52F2009290E4 /* ColorHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,7 +775,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.davideutsch.Gradients;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -584,7 +795,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.davideutsch.Gradients;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

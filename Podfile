@@ -6,6 +6,7 @@ target 'Gradients' do
   use_frameworks!
 
   # Pods for Gradients
+  pod 'SwipeCellKit'
 
   target 'GradientsTests' do
     inherit! :search_paths

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="93" id="KGk-i7-Jjw" customClass="ColorCell" customModule="Gradients" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="351" height="93"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HqW-hi-z9O">
+                        <rect key="frame" x="0.0" y="0.0" width="351" height="40"/>
+                        <subviews>
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Bs-rD-ewS">
+                                <rect key="frame" x="0.0" y="0.0" width="351" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1My-Zo-m2c" userLabel="NumberView">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nr." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYo-rx-CcO">
+                                                <rect key="frame" x="9" y="10" width="22" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="numberColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="numberBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="VYo-rx-CcO" firstAttribute="centerY" secondItem="1My-Zo-m2c" secondAttribute="centerY" id="sjT-1m-iE8"/>
+                                            <constraint firstItem="VYo-rx-CcO" firstAttribute="centerX" secondItem="1My-Zo-m2c" secondAttribute="centerX" id="wxf-0r-beq"/>
+                                            <constraint firstAttribute="width" constant="40" id="ySN-DD-9uo"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vZy-0m-ZIK" userLabel="TapToEditView">
+                                        <rect key="frame" x="40" y="0.0" width="311" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to edit color..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnv-ca-ZNF">
+                                                <rect key="frame" x="10" y="10" width="136" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="textBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="dnv-ca-ZNF" firstAttribute="centerY" secondItem="vZy-0m-ZIK" secondAttribute="centerY" id="AOw-rm-wJw"/>
+                                            <constraint firstItem="dnv-ca-ZNF" firstAttribute="leading" secondItem="vZy-0m-ZIK" secondAttribute="leading" constant="10" id="fgk-yy-Shr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="1My-Zo-m2c" secondAttribute="bottom" id="3nh-DI-rqM"/>
+                                    <constraint firstAttribute="bottom" secondItem="vZy-0m-ZIK" secondAttribute="bottom" id="4cx-bx-jm6"/>
+                                    <constraint firstItem="vZy-0m-ZIK" firstAttribute="leading" secondItem="1My-Zo-m2c" secondAttribute="trailing" id="7qu-H7-CN2"/>
+                                    <constraint firstAttribute="trailing" secondItem="vZy-0m-ZIK" secondAttribute="trailing" id="9f1-7S-Ixc"/>
+                                    <constraint firstItem="vZy-0m-ZIK" firstAttribute="top" secondItem="6Bs-rD-ewS" secondAttribute="top" id="Rch-It-jFH"/>
+                                    <constraint firstItem="vZy-0m-ZIK" firstAttribute="leading" secondItem="1My-Zo-m2c" secondAttribute="trailing" id="bu6-CI-p1c"/>
+                                    <constraint firstItem="1My-Zo-m2c" firstAttribute="top" secondItem="6Bs-rD-ewS" secondAttribute="top" id="mmm-Pd-Mim"/>
+                                    <constraint firstItem="1My-Zo-m2c" firstAttribute="leading" secondItem="6Bs-rD-ewS" secondAttribute="leading" id="u3r-Qt-6Og"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Bs-rD-ewS" firstAttribute="leading" secondItem="HqW-hi-z9O" secondAttribute="leading" id="0I0-kg-jeD"/>
+                            <constraint firstAttribute="height" constant="40" id="SZ7-p0-mVm"/>
+                            <constraint firstItem="6Bs-rD-ewS" firstAttribute="top" secondItem="HqW-hi-z9O" secondAttribute="top" id="cwD-It-6wY"/>
+                            <constraint firstAttribute="trailing" secondItem="6Bs-rD-ewS" secondAttribute="trailing" id="nxS-nn-GeF"/>
+                            <constraint firstAttribute="bottom" secondItem="6Bs-rD-ewS" secondAttribute="bottom" id="xQP-zd-mTt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="HqW-hi-z9O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1ea-IL-uek"/>
+                    <constraint firstAttribute="trailing" secondItem="HqW-hi-z9O" secondAttribute="trailing" id="ORi-Fd-MOw"/>
+                    <constraint firstItem="HqW-hi-z9O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WXn-8u-ieT"/>
+                    <constraint firstAttribute="bottom" secondItem="HqW-hi-z9O" secondAttribute="bottom" id="rvH-WJ-NDX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="numberLabel" destination="VYo-rx-CcO" id="ENX-uc-ZY2"/>
+                <outlet property="numberView" destination="1My-Zo-m2c" id="Fd9-4s-94W"/>
+                <outlet property="tapToEditColorLabel" destination="dnv-ca-ZNF" id="Lrt-w2-1Me"/>
+                <outlet property="tapToEditView" destination="vZy-0m-ZIK" id="3kK-cn-mhz"/>
+            </connections>
+            <point key="canvasLocation" x="-355.79710144927537" y="149.66517857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="numberBackgroundColor">
+            <color red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="numberColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textBackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
