@@ -26,6 +26,8 @@ class CreateViewController: UIViewController {
     
     var currentColorListItemSelected: Int = 0
     
+    let vibrationGenerator = UIImpactFeedbackGenerator(style: .medium)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,6 +49,9 @@ class CreateViewController: UIViewController {
         
         colorsTableView.dataSource = self
         colorsTableView.delegate = self
+        
+        let longpress = UILongPressGestureRecognizer(target: self, action: #selector(self.longPressGestureRecognized(_:)))
+        colorsTableView.addGestureRecognizer(longpress)
     }
     
     func setStyle(){
@@ -61,6 +66,114 @@ class CreateViewController: UIViewController {
         directionButton.titleLabel!.font = UIFont(name: "Montserrat-Bold", size: 20)
         directionButton.layer.cornerRadius = 8
         directionButton.setImage(currentGradient.direction.arrowImage(), for: .normal)
+    }
+    
+    func addDragAndDropFunctionality(){
+        
+    }
+    
+    @objc func longPressGestureRecognized(_ gestureRecognizer: UIGestureRecognizer) {
+        let longPress = gestureRecognizer as! UILongPressGestureRecognizer
+        let state = longPress.state
+        let locationInView = longPress.location(in: colorsTableView)
+        let indexPath = colorsTableView.indexPathForRow(at: locationInView)
+        struct My {
+            static var cellSnapshot : UIView? = nil
+            static var cellIsAnimating : Bool = false
+            static var cellNeedToShow : Bool = false
+        }
+        struct Path {
+            static var initialIndexPath : IndexPath? = nil
+        }
+        switch state {
+        case UIGestureRecognizerState.began:
+            if indexPath != nil {
+                Path.initialIndexPath = indexPath
+                let cell = colorsTableView.cellForRow(at: indexPath!) as UITableViewCell?
+                My.cellSnapshot  = snapshotOfCell(cell!)
+                var center = cell?.center
+                My.cellSnapshot!.center = center!
+                My.cellSnapshot!.alpha = 0.0
+                colorsTableView.addSubview(My.cellSnapshot!)
+                UIView.animate(withDuration: 0.25, animations: { () -> Void in
+                    center?.y = locationInView.y
+                    My.cellIsAnimating = true
+                    My.cellSnapshot!.center = center!
+                    My.cellSnapshot!.transform = CGAffineTransform(scaleX: 1.05, y: 1.05)
+                    My.cellSnapshot!.alpha = 0.98
+                    cell?.alpha = 0.0
+                }, completion: { (finished) -> Void in
+                    if finished {
+                        My.cellIsAnimating = false
+                        if My.cellNeedToShow {
+                            My.cellNeedToShow = false
+                            UIView.animate(withDuration: 0.25) {
+                                cell?.alpha = 1
+                            }
+                        } else {
+                            cell?.isHidden = true
+                        }
+                    }
+                })
+            }
+        case UIGestureRecognizerState.changed:
+            if My.cellSnapshot != nil {
+                var center = My.cellSnapshot!.center
+                center.y = locationInView.y
+                My.cellSnapshot!.center = center
+                if let indexPath = indexPath {
+                    if indexPath != Path.initialIndexPath {
+                        if indexPath.section < currentGradient.colors.count{
+                            self.currentGradient.colors.swapAt(Path.initialIndexPath!.section, indexPath.section)
+                            Path.initialIndexPath = indexPath
+                            
+                            vibrationGenerator.impactOccurred()
+                            
+                            updateGradientView()
+                        }
+                    }
+                }
+            }
+        default:
+            if Path.initialIndexPath != nil {
+                if let cell = colorsTableView.cellForRow(at: Path.initialIndexPath!) as UITableViewCell? {
+                    if My.cellIsAnimating {
+                        My.cellNeedToShow = true
+                    } else {
+                        cell.isHidden = false
+                        cell.alpha = 0.0
+                    }
+                    UIView.animate(withDuration: 0.25, animations: { () -> Void in
+                        My.cellSnapshot!.center = (cell.center)
+                        My.cellSnapshot!.transform = CGAffineTransform.identity
+                        My.cellSnapshot!.alpha = 0.0
+                        cell.alpha = 1.0
+                    }, completion: { (finished) -> Void in
+                        if finished {
+                            Path.initialIndexPath = nil
+                            My.cellSnapshot!.removeFromSuperview()
+                            My.cellSnapshot = nil
+                        }
+                    })
+                }
+            }
+        }
+        colorsTableView.reloadData()
+    }
+    
+    func snapshotOfCell(_ inputView: UIView) -> UIView {
+        UIGraphicsBeginImageContextWithOptions(inputView.bounds.size, false, 0.0)
+        inputView.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()! as UIImage
+        UIGraphicsEndImageContext()
+        let cellSnapshot : UIView = UIImageView(image: image)
+        cellSnapshot.layer.masksToBounds = false
+        cellSnapshot.layer.cornerRadius = 0.0
+        cellSnapshot.layer.shadowOffset = CGSize(width: -5.0, height: 0.0)
+        cellSnapshot.layer.shadowRadius = 5.0
+        cellSnapshot.layer.shadowOpacity = 0.4
+        
+        return cellSnapshot
     }
     
     // Rotate the gradientView to the next direction
@@ -82,6 +195,9 @@ class CreateViewController: UIViewController {
         
         //        3. Update the gradientView with the new direction
         updateGradientView()
+        
+        //        4. Let the device vibrate
+        vibrationGenerator.impactOccurred()
     }
     
     override func viewDidLayoutSubviews() {
@@ -151,15 +267,11 @@ extension CreateViewController: UITableViewDataSource {
         headerView.backgroundColor = UIColor.clear
         return headerView
     }
-//
-//    func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
-//            return index
-//        }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section <= (currentGradient.colors.count - 1){
             let cell = colorsTableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! ColorCell
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "SwipeCell") as! SwipeTableViewCell
+            //            let cell = tableView.dequeueReusableCell(withIdentifier: "SwipeCell") as! SwipeTableViewCell
             
             cell.numberLabel.text = "\(indexPath.section + 1)"
             cell.tapToEditView.backgroundColor = currentGradient.colors[indexPath.section]
@@ -171,46 +283,12 @@ extension CreateViewController: UITableViewDataSource {
         }
     }
     
-//    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-//        return (indexPath.section < currentGradient.colors.count) ? true : false
-//    }
-    
-    //    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
-    //        return UITableViewCell.EditingStyle.delete
-    //    }
-    //
-    //    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-    //        if editingStyle == .delete {
-    //            currentGradient.colors.remove(at: indexPath.section)
-    //            updateGradientView()
-    //        }
-    //    }
-    
     func tableView(_ tableView: UITableView, editActionsOptionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> SwipeTableOptions {
         var options = SwipeTableOptions()
         options.expansionStyle = .selection
         options.transitionStyle = .reveal
         return options
     }
-    
-    //    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-    ////        let deleteAction = UITableViewRowAction(style: .normal, title: "Delete") { (rowAction, indexPath) in
-    ////                //TODO: Delete the row at indexPath here
-    ////            self.currentGradient.colors.remove(at: indexPath.section)
-    ////            self.updateGradientView()
-    ////        }
-    //
-    //        let deleteAction = UIContextualAction(style: .normal, title: "Delete") { (action, view, completion) in
-    //                self.currentGradient.colors.remove(at: indexPath.section)
-    //                self.updateGradientView()
-    //                completion(true)
-    //          }
-    //
-    //        deleteAction.backgroundColor = .clear
-    //        deleteAction.image = UIImage(systemName: "trash.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 15, weight: .regular, scale: .medium))!.withTintColor(.white, renderingMode: .alwaysOriginal)
-    //
-    //        return UISwipeActionsConfiguration(actions: [deleteAction])
-    //    }
 }
 
 //MARK: - SwipeTableViewCellDelegate
@@ -220,6 +298,7 @@ extension CreateViewController: SwipeTableViewCellDelegate {
         
         let deleteAction = SwipeAction(style: .destructive, title: "Delete") { action, indexPath in
             self.currentGradient.colors.remove(at: indexPath.section)
+            self.vibrationGenerator.impactOccurred()
             self.updateGradientView()
         }
         deleteAction.transitionDelegate = ScaleTransition.default
@@ -227,13 +306,7 @@ extension CreateViewController: SwipeTableViewCellDelegate {
         
         // customize the action appearance
         deleteAction.backgroundColor = .clear
-        
         deleteAction.image = UIImage(systemName: "trash.circle.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 35, weight: .regular, scale: .medium))!.withTintColor(.red, renderingMode: .alwaysOriginal)
-//        deleteAction.image = UIImage(systemName: "trash.circle.fill")!.withTintColor(.red, renderingMode: .alwaysOriginal)
-        
-        
-        var options = SwipeTableOptions()
-        options.expansionStyle = .selection
         
         return [deleteAction]
     }
@@ -256,6 +329,36 @@ extension CreateViewController: UITableViewDelegate{
         }
     }
     
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .none
+    }
+    
+    func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
+        return false
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        if destinationIndexPath.section < currentGradient.colors.count {
+            currentGradient.colors.swapAt(sourceIndexPath.section, destinationIndexPath.section)
+            updateGradientView()
+        }
+    }
+    
+    //    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+    //        return (indexPath.section < currentGradient.colors.count) ? true : false
+    //    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return (indexPath.section < currentGradient.colors.count) ? true : false
+    }
+    
+        func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
+            if proposedDestinationIndexPath.section == currentGradient.colors.count {
+                return sourceIndexPath
+            } else {
+                return proposedDestinationIndexPath
+            }
+        }
     
     func openColorPicker(color: UIColor?){
         let picker = UIColorPickerViewController()
@@ -269,7 +372,7 @@ extension CreateViewController: UITableViewDelegate{
         } else {
             picker.title = "Add Color"
         }
-        
+        vibrationGenerator.impactOccurred()
         self.present(picker, animated: true, completion: nil)
     }
 }
@@ -299,18 +402,18 @@ extension CreateViewController: UIColorPickerViewControllerDelegate {
 }
 
 extension UIImageView {
-
-   func setRounded() {
+    
+    func setRounded() {
         let radius = self.frame.width / 2
         self.layer.cornerRadius = radius
         self.layer.masksToBounds = true
-   }
+    }
 }
 
 extension UITableView {
     func setShade(){
         let gradient = CAGradientLayer()
-
+        
         if let superview = superview {
             gradient.frame = superview.bounds
             gradient.colors = [UIColor.clear.cgColor, UIColor.black.cgColor, UIColor.black.cgColor, UIColor.clear.cgColor]
@@ -323,16 +426,16 @@ extension UITableView {
 }
 
 extension UIColor {
-        func toHexString() -> String {
-            var r:CGFloat = 0
-            var g:CGFloat = 0
-            var b:CGFloat = 0
-            var a:CGFloat = 0
-
-            getRed(&r, green: &g, blue: &b, alpha: &a)
-
-            let rgb:Int = (Int)(r*255)<<16 | (Int)(g*255)<<8 | (Int)(b*255)<<0
-
-            return String(format:"#%06x", rgb)
-        }
+    func toHexString() -> String {
+        var r:CGFloat = 0
+        var g:CGFloat = 0
+        var b:CGFloat = 0
+        var a:CGFloat = 0
+        
+        getRed(&r, green: &g, blue: &b, alpha: &a)
+        
+        let rgb:Int = (Int)(r*255)<<16 | (Int)(g*255)<<8 | (Int)(b*255)<<0
+        
+        return String(format:"#%06x", rgb)
     }
+}
