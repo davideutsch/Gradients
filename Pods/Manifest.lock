@@ -1,16 +1,20 @@
 PODS:
+  - StatusAlert (1.1.1)
   - SwipeCellKit (2.7.1)
 
 DEPENDENCIES:
+  - StatusAlert (~> 1.1.1)
   - SwipeCellKit
 
 SPEC REPOS:
   trunk:
+    - StatusAlert
     - SwipeCellKit
 
 SPEC CHECKSUMS:
+  StatusAlert: a18ec3c33d36a06d4479c1f2b15ffac67aaf7ab1
   SwipeCellKit: 3972254a826da74609926daf59b08d6c72e619ea
 
-PODFILE CHECKSUM: 62aaeddd09f690d3c4804f79f645c373f4a1ba80
+PODFILE CHECKSUM: 9e135d9eb7e1cf2a0d7ba8fed44e8eeadea163e2
 
 COCOAPODS: 1.9.3

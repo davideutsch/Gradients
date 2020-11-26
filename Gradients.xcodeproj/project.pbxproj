@@ -52,9 +52,11 @@
 		B8BDBCD5255DB471009290E4 /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBCD4255DB470009290E4 /* ExportViewController.swift */; };
 		B8BDBCD6255DB471009290E4 /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBCD4255DB470009290E4 /* ExportViewController.swift */; };
 		B8BDBCD7255DB471009290E4 /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDBCD4255DB470009290E4 /* ExportViewController.swift */; };
-		B8F171D02561E48700D8F749 /* SelectColorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8F171CF2561E48700D8F749 /* SelectColorView.xib */; };
+		B8E3292C256C108C001CA7A4 /* GradientsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3292B256C108C001CA7A4 /* GradientsCollectionViewController.swift */; };
+		B8E32935256C11CD001CA7A4 /* GradientsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E32933256C11CD001CA7A4 /* GradientsCollectionViewCell.swift */; };
+		B8E32949256D25EE001CA7A4 /* GradientCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8E32948256D25EE001CA7A4 /* GradientCell.xib */; };
+		B8E3294F256E7BAD001CA7A4 /* GradientsCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E3294D256E7BAD001CA7A4 /* GradientsCollectionViewHeader.swift */; };
 		B8F17220256299EE00D8F749 /* ExportViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1721F256299EE00D8F749 /* ExportViewTest.swift */; };
-		B8F1723225648D1500D8F749 /* ExportSubViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1723125648D1500D8F749 /* ExportSubViewTest.swift */; };
 		DB234EB29EB3F5B06A670792 /* Pods_Gradients_GradientsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B929FCA32AEBD1D9076A75 /* Pods_Gradients_GradientsUITests.framework */; };
 		E1CF73F66CAE0364635F097A /* Pods_GradientsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08116BF82F09C1C0774C8AE /* Pods_GradientsTests.framework */; };
 /* End PBXBuildFile section */
@@ -112,9 +114,11 @@
 		B8BDBCBF255C52F1009290E4 /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
 		B8BDBCC9255CAABD009290E4 /* AddNewColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewColorCell.swift; sourceTree = "<group>"; };
 		B8BDBCD4255DB470009290E4 /* ExportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportViewController.swift; sourceTree = "<group>"; };
-		B8F171CF2561E48700D8F749 /* SelectColorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectColorView.xib; sourceTree = "<group>"; };
+		B8E3292B256C108C001CA7A4 /* GradientsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientsCollectionViewController.swift; sourceTree = "<group>"; };
+		B8E32933256C11CD001CA7A4 /* GradientsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientsCollectionViewCell.swift; sourceTree = "<group>"; };
+		B8E32948256D25EE001CA7A4 /* GradientCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradientCell.xib; sourceTree = "<group>"; };
+		B8E3294D256E7BAD001CA7A4 /* GradientsCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientsCollectionViewHeader.swift; sourceTree = "<group>"; };
 		B8F1721F256299EE00D8F749 /* ExportViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportViewTest.swift; sourceTree = "<group>"; };
-		B8F1723125648D1500D8F749 /* ExportSubViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportSubViewTest.swift; sourceTree = "<group>"; };
 		CC69EC56D99A7BCB0171F0E8 /* Pods-Gradients.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gradients.release.xcconfig"; path = "Target Support Files/Pods-Gradients/Pods-Gradients.release.xcconfig"; sourceTree = "<group>"; };
 		D11B620A873A6E548861DEBC /* Pods-Gradients.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gradients.debug.xcconfig"; path = "Target Support Files/Pods-Gradients/Pods-Gradients.debug.xcconfig"; sourceTree = "<group>"; };
 		DAAB012C7C4EB9C9A96956D3 /* Pods-Gradients-GradientsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gradients-GradientsUITests.release.xcconfig"; path = "Target Support Files/Pods-Gradients-GradientsUITests/Pods-Gradients-GradientsUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -229,7 +233,6 @@
 		B8B62D6725671A3B003BF656 /* Falsch */ = {
 			isa = PBXGroup;
 			children = (
-				B8F1723125648D1500D8F749 /* ExportSubViewTest.swift */,
 				B8F1721F256299EE00D8F749 /* ExportViewTest.swift */,
 			);
 			path = Falsch;
@@ -261,9 +264,12 @@
 				B898C4EA255AC4620082582B /* LaunchScreen.storyboard */,
 				B898C4E2255AC4600082582B /* Main.storyboard */,
 				B8B62D62256712CA003BF656 /* ExportSlideView.xib */,
-				B8B62D6725671A3B003BF656 /* Falsch */,
-				B8F171C62561E46800D8F749 /* SelectColor */,
+				B8E32933256C11CD001CA7A4 /* GradientsCollectionViewCell.swift */,
+				B8E32941256D0E11001CA7A4 /* GradientCollectionComponent */,
 				B8B62DAB25688491003BF656 /* ListItems */,
+				B8B62D6725671A3B003BF656 /* Falsch */,
+				B8E32948256D25EE001CA7A4 /* GradientCell.xib */,
+				B8E3294D256E7BAD001CA7A4 /* GradientsCollectionViewHeader.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -272,8 +278,9 @@
 			isa = PBXGroup;
 			children = (
 				B8BDBC91255AE9E0009290E4 /* CreateViewController.swift */,
-				B8BDBCD4255DB470009290E4 /* ExportViewController.swift */,
 				B8B62D95256722E7003BF656 /* ExportSlideViewController.swift */,
+				B8E3292B256C108C001CA7A4 /* GradientsCollectionViewController.swift */,
+				B8E3293D256D0DDC001CA7A4 /* Falsch */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -288,12 +295,19 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		B8F171C62561E46800D8F749 /* SelectColor */ = {
+		B8E3293D256D0DDC001CA7A4 /* Falsch */ = {
 			isa = PBXGroup;
 			children = (
-				B8F171CF2561E48700D8F749 /* SelectColorView.xib */,
+				B8BDBCD4255DB470009290E4 /* ExportViewController.swift */,
 			);
-			path = SelectColor;
+			path = Falsch;
+			sourceTree = "<group>";
+		};
+		B8E32941256D0E11001CA7A4 /* GradientCollectionComponent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GradientCollectionComponent;
 			sourceTree = "<group>";
 		};
 		FA84F1022293E7DF9B56844B /* Pods */ = {
@@ -419,8 +433,8 @@
 			files = (
 				B89E5130255ADF4400E8CC65 /* Montserrat-Regular.ttf in Resources */,
 				B89E5126255ADF3700E8CC65 /* Montserrat-Bold.ttf in Resources */,
-				B8F171D02561E48700D8F749 /* SelectColorView.xib in Resources */,
 				B898C4EC255AC4620082582B /* LaunchScreen.storyboard in Resources */,
+				B8E32949256D25EE001CA7A4 /* GradientCell.xib in Resources */,
 				B8017C1B2568866600BD2693 /* AddNewColorCell.xib in Resources */,
 				B89E511F255ADF2700E8CC65 /* ConcertOne-Regular.ttf in Resources */,
 				B898C4E9255AC4620082582B /* Assets.xcassets in Resources */,
@@ -566,7 +580,6 @@
 				B898C4DD255AC4600082582B /* AppDelegate.swift in Sources */,
 				B8BDBCB5255BE4E5009290E4 /* ColorCell.swift in Sources */,
 				B8BDBCC0255C52F1009290E4 /* ColorHelper.swift in Sources */,
-				B8F1723225648D1500D8F749 /* ExportSubViewTest.swift in Sources */,
 				B8B62DA42567C5E9003BF656 /* Gradient.swift in Sources */,
 				B8F17220256299EE00D8F749 /* ExportViewTest.swift in Sources */,
 				B8BDBCD5255DB471009290E4 /* ExportViewController.swift in Sources */,
@@ -575,8 +588,11 @@
 				B8BDBC9E255B70F3009290E4 /* ImageSaver.swift in Sources */,
 				B8B62D96256722E7003BF656 /* ExportSlideViewController.swift in Sources */,
 				B898C4DF255AC4600082582B /* SceneDelegate.swift in Sources */,
+				B8E32935256C11CD001CA7A4 /* GradientsCollectionViewCell.swift in Sources */,
 				B898C4E7255AC4600082582B /* Gradients.xcdatamodeld in Sources */,
+				B8E3292C256C108C001CA7A4 /* GradientsCollectionViewController.swift in Sources */,
 				B8BDBCCB255CAABE009290E4 /* AddNewColorCell.swift in Sources */,
+				B8E3294F256E7BAD001CA7A4 /* GradientsCollectionViewHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,7 +791,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.davideutsch.Gradients;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -795,7 +811,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.davideutsch.Gradients;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

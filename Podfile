@@ -7,6 +7,7 @@ target 'Gradients' do
 
   # Pods for Gradients
   pod 'SwipeCellKit'
+  pod 'StatusAlert', '~> 1.1.1'
 
   target 'GradientsTests' do
     inherit! :search_paths

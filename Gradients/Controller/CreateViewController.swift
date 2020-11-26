@@ -7,6 +7,7 @@
 
 import UIKit
 import SwipeCellKit
+import StatusAlert
 
 class CreateViewController: UIViewController {
     
@@ -15,6 +16,7 @@ class CreateViewController: UIViewController {
     @IBOutlet weak var gradientView: UIView!
     @IBOutlet weak var colorsTableView: UITableView!
     @IBOutlet weak var directionButton: UIButton!
+    @IBOutlet weak var saveGradientButton: UIButton!
     
     @IBOutlet weak var noColorExistsLabel: UILabel!
     
@@ -66,6 +68,10 @@ class CreateViewController: UIViewController {
         directionButton.titleLabel!.font = UIFont(name: "Montserrat-Bold", size: 20)
         directionButton.layer.cornerRadius = 8
         directionButton.setImage(currentGradient.direction.arrowImage(), for: .normal)
+        
+        saveGradientButton.titleLabel!.font = UIFont(name: "Montserrat-Bold", size: 20)
+        saveGradientButton.layer.cornerRadius = 8
+        saveGradientButton.setImage(UIImage(systemName: "tray.and.arrow.down.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 20, weight: .regular, scale: .medium))!.withTintColor(.white, renderingMode: .alwaysOriginal), for: .normal)
     }
     
     func addDragAndDropFunctionality(){
@@ -224,6 +230,18 @@ class CreateViewController: UIViewController {
         updateDirection()
     }
     
+    @IBAction func saveGradientBtnClicked(_ sender: UIButton) {
+        // Creating StatusAlert instance
+        let statusAlert = StatusAlert()
+        statusAlert.image = UIImage(systemName: "checkmark")
+        statusAlert.title = "Saved"
+        statusAlert.message = "Current Gradient was saved!"
+        statusAlert.canBePickedOrDismissed = false
+
+        // Presenting created instance
+        statusAlert.showInKeyWindow()
+    }
+    
     func updateGradientView(){
         self.colorsTableView.reloadData()
         
@@ -233,6 +251,7 @@ class CreateViewController: UIViewController {
         
         noColorExistsLabel.isHidden = (currentGradient.colors.count == 0) ? false : true
         directionButton.isHidden = (currentGradient.colors.count == 0) ? true : false
+        saveGradientButton.isHidden = (currentGradient.colors.count == 0) ? true : false
         
         gradientLayer.frame = CGRect(x: gradientView.frame.origin.x, y: gradientView.frame.origin.y, width: gradientView.frame.width, height: gradientView.frame.width)
         
