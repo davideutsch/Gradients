@@ -8,5 +8,5 @@
 import Foundation
 
 struct SelectedColor {
-    let hexColor: String // #123456
+    public let hexColor: String // #123456
 }

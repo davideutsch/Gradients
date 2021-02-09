@@ -34,14 +34,12 @@ class ColorCell: SwipeTableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        if let tapToEditView = self.tapToEditView, let numberView = self.numberView {
+        if let _ = self.tapToEditView, let numberView = self.numberView {
 //             tapToEditView.roundCorners(corners: [.topRight,.bottomRight], radius: 8)
             numberView.roundCorners(corners: [.topLeft,.bottomLeft], radius: 8)
          }
@@ -50,7 +48,6 @@ class ColorCell: SwipeTableViewCell {
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         if #available(iOS 13.0, *) {
             if (traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection)) {
-                // ColorUtils.loadCGColorFromAsset returns cgcolor for color name
                 if let view = tapToEditView, let borderColor = UIColor(named: "BorderColor") {
                     view.layer.borderColor = borderColor.cgColor
                 }
@@ -69,22 +66,6 @@ extension UILabel {
         layer.masksToBounds = false
     }
 }
-
-//extension UIColor {
-//    static var borderColor: UIColor {
-//        if #available(iOS 13.0, *) {
-//            return UIColor { (traits) -> UIColor in
-//                // Return one of two colors depending on light or dark mode
-//                return traits.userInterfaceStyle == .dark ?
-//                    UIColor(red: 0.5, green: 0.4, blue: 0.3, alpha: 0) :
-//                    ColorHelper.hexStringToUIColor(hex: "#555555")
-//            }
-//        } else {
-//            // Same old color used for iOS 12 and earlier
-//            return UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
-//        }
-//    }
-//}
 
 extension UIView {
    func roundCorners(corners: UIRectCorner, radius: CGFloat) {

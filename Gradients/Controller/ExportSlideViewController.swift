@@ -17,8 +17,6 @@ class ExportSlideViewController: UIViewController {
     var hasSetPointOrigin = false
     var pointOrigin: CGPoint?
     
-//    var colorsToExport: [UIColor]?
-//    var direction: Direction?
     var gradient: Gradient?
     
     //Formate siehe: https://de.wikipedia.org/wiki/Bildauflösung    
@@ -92,10 +90,10 @@ class ExportSlideViewController: UIViewController {
         gradientLayer.frame = CGRect(x: 0, y: 0, width: gradientView.frame.width, height: gradientView.frame.height)
         
         if gradient!.colors.count == 1 {
-            let singleColor = gradient!.colors[0].cgColor
+            let singleColor = UIColor(hexString: gradient!.colors[0])!.cgColor
             gradientLayer.colors = [singleColor, singleColor]
         } else {
-            gradientLayer.colors = gradient!.colors.map({$0.cgColor})
+            gradientLayer.colors = gradient!.colors.map({UIColor(hexString: $0)!.cgColor})
         }
        
         gradientLayer.startPoint = gradient!.direction.startPoint()

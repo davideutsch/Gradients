@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SavedGradientCell" id="TWs-HK-EfD" customClass="SavedGradientCell" customModule="Gradients" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="182"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="t90-Xc-HZt">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="182"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5uo-0O-Ycx">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="182"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="shd-iP-2Pj">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="91"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nqO-J9-NIl">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="91"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTb-Gv-Urn">
+                                                <rect key="frame" x="15" y="15" width="80" height="71"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59878964459999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Delete"/>
+                                                <connections>
+                                                    <action selector="deleteBtnPressed:" destination="TWs-HK-EfD" eventType="touchUpInside" id="gqt-Ll-yKt"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="BTb-Gv-Urn" firstAttribute="top" secondItem="nqO-J9-NIl" secondAttribute="top" constant="15" id="OEX-G8-k29"/>
+                                            <constraint firstAttribute="trailing" secondItem="BTb-Gv-Urn" secondAttribute="trailing" constant="5" id="ac4-Ct-dfP"/>
+                                            <constraint firstItem="BTb-Gv-Urn" firstAttribute="leading" secondItem="nqO-J9-NIl" secondAttribute="leading" constant="15" id="kgH-Gt-EVa"/>
+                                            <constraint firstAttribute="bottom" secondItem="BTb-Gv-Urn" secondAttribute="bottom" constant="5" id="ws1-wn-r2N"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGx-ty-how">
+                                        <rect key="frame" x="100" y="0.0" width="100" height="91"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clearBtnPressed:" destination="TWs-HK-EfD" eventType="touchUpInside" id="6GQ-sm-nUw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EPG-w7-NGZ">
+                                <rect key="frame" x="0.0" y="91" width="200" height="91"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pP8-15-QLE">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="91"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5r4-O7-zp8">
+                                                <rect key="frame" x="15" y="5" width="80" height="71"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59878964459999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Edit"/>
+                                                <connections>
+                                                    <action selector="editBtnPressed:" destination="TWs-HK-EfD" eventType="touchUpInside" id="FXf-tN-clR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="5r4-O7-zp8" secondAttribute="trailing" constant="5" id="7MP-zN-PrY"/>
+                                            <constraint firstAttribute="bottom" secondItem="5r4-O7-zp8" secondAttribute="bottom" constant="15" id="7qQ-9I-BMj"/>
+                                            <constraint firstItem="5r4-O7-zp8" firstAttribute="top" secondItem="pP8-15-QLE" secondAttribute="top" constant="5" id="Suy-fQ-LJc"/>
+                                            <constraint firstItem="5r4-O7-zp8" firstAttribute="leading" secondItem="pP8-15-QLE" secondAttribute="leading" constant="15" id="THm-sC-fwd"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BoV-nQ-5NY">
+                                        <rect key="frame" x="100" y="0.0" width="100" height="91"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRJ-0U-ON1">
+                                                <rect key="frame" x="5" y="5" width="80" height="71"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59878964459999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Export"/>
+                                                <connections>
+                                                    <action selector="exportBtnPressed:" destination="TWs-HK-EfD" eventType="touchUpInside" id="4iv-pO-rEe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="lRJ-0U-ON1" firstAttribute="top" secondItem="BoV-nQ-5NY" secondAttribute="top" constant="5" id="0LV-uz-2ul"/>
+                                            <constraint firstItem="lRJ-0U-ON1" firstAttribute="leading" secondItem="BoV-nQ-5NY" secondAttribute="leading" constant="5" id="EXr-8v-Bq8"/>
+                                            <constraint firstAttribute="trailing" secondItem="lRJ-0U-ON1" secondAttribute="trailing" constant="15" id="N6E-zh-Sli"/>
+                                            <constraint firstAttribute="bottom" secondItem="lRJ-0U-ON1" secondAttribute="bottom" constant="15" id="yec-Pn-Y4j"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="5uo-0O-Ycx" secondAttribute="bottom" id="4jF-Si-Kjg"/>
+                    <constraint firstItem="5uo-0O-Ycx" firstAttribute="top" secondItem="t90-Xc-HZt" secondAttribute="top" id="9Ny-zT-eVv"/>
+                    <constraint firstAttribute="trailing" secondItem="5uo-0O-Ycx" secondAttribute="trailing" id="Drh-po-Cv9"/>
+                    <constraint firstItem="5uo-0O-Ycx" firstAttribute="leading" secondItem="t90-Xc-HZt" secondAttribute="leading" id="IRy-z2-8ML"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="200" height="182"/>
+            <connections>
+                <outlet property="clearBtn" destination="tGx-ty-how" id="WZF-L1-gYt"/>
+                <outlet property="deleteBtn" destination="BTb-Gv-Urn" id="Rfk-6g-T4R"/>
+                <outlet property="editBtn" destination="5r4-O7-zp8" id="aYa-wB-Vgq"/>
+                <outlet property="exportBtn" destination="lRJ-0U-ON1" id="MJ2-pA-5n0"/>
+                <outlet property="rootStackView" destination="5uo-0O-Ycx" id="TD1-oK-Yis"/>
+            </connections>
+            <point key="canvasLocation" x="-637.68115942028987" y="-13.392857142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>

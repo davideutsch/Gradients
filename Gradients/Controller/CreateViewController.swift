@@ -22,7 +22,7 @@ class CreateViewController: UIViewController {
     
     var currentGradient = Gradient(
         direction: Direction.TOPTOBOTTOM,
-        colors: ["#ff6f00","#ffdd00"].map({ColorHelper.hexStringToUIColor(hex: $0)}))
+        colors: ["#ff6f00","#ffdd00"])
     
     var gradientLayer = CAGradientLayer()
     
@@ -72,10 +72,6 @@ class CreateViewController: UIViewController {
         saveGradientButton.titleLabel!.font = UIFont(name: "Montserrat-Bold", size: 20)
         saveGradientButton.layer.cornerRadius = 8
         saveGradientButton.setImage(UIImage(systemName: "tray.and.arrow.down.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 20, weight: .regular, scale: .medium))!.withTintColor(.white, renderingMode: .alwaysOriginal), for: .normal)
-    }
-    
-    func addDragAndDropFunctionality(){
-        
     }
     
     @objc func longPressGestureRecognized(_ gestureRecognizer: UIGestureRecognizer) {
@@ -167,6 +163,10 @@ class CreateViewController: UIViewController {
         colorsTableView.reloadData()
     }
     
+    func renewCurrentGradientID(){
+        currentGradient = Gradient(direction: currentGradient.direction, colors: currentGradient.colors)
+    }
+    
     func snapshotOfCell(_ inputView: UIView) -> UIView {
         UIGraphicsBeginImageContextWithOptions(inputView.bounds.size, false, 0.0)
         inputView.layer.render(in: UIGraphicsGetCurrentContext()!)
@@ -184,6 +184,9 @@ class CreateViewController: UIViewController {
     
     // Rotate the gradientView to the next direction
     func updateDirection(){
+        //renew the currentGradient object to seperate it from the databases
+        renewCurrentGradientID()
+        
         //        1. Check current Direction and go forward to the next one
         switch currentGradient.direction {
         case .TOPTOBOTTOM:
@@ -231,15 +234,34 @@ class CreateViewController: UIViewController {
     }
     
     @IBAction func saveGradientBtnClicked(_ sender: UIButton) {
-        // Creating StatusAlert instance
-        let statusAlert = StatusAlert()
-        statusAlert.image = UIImage(systemName: "checkmark")
-        statusAlert.title = "Saved"
-        statusAlert.message = "Current Gradient was saved!"
-        statusAlert.canBePickedOrDismissed = false
-
-        // Presenting created instance
-        statusAlert.showInKeyWindow()
+        //save gradient in database
+        
+        //check if gradient was already saved
+        if !RealmHelper.checkIfGradientExists(currentGradient.id) {
+            RealmHelper.saveGradient(currentGradient)
+            
+            //save gradient in global database
+            FirebaseHelper.addGradient(gradient: currentGradient)
+            
+            // Creating StatusAlert instance
+            let statusAlert = StatusAlert()
+            statusAlert.image = UIImage(systemName: "checkmark")
+            statusAlert.title = "Saved"
+            statusAlert.message = "Current Gradient was saved!"
+            statusAlert.canBePickedOrDismissed = false
+            
+            // Presenting created instance
+            statusAlert.showInKeyWindow()
+        } else {
+            let statusAlert = StatusAlert()
+            statusAlert.image = UIImage(systemName: "checkmark")
+            statusAlert.title = "Already saved"
+            statusAlert.message = "Current Gradient was already saved!"
+            statusAlert.canBePickedOrDismissed = false
+            
+            // Presenting created instance
+            statusAlert.showInKeyWindow()
+        }
     }
     
     func updateGradientView(){
@@ -256,10 +278,10 @@ class CreateViewController: UIViewController {
         gradientLayer.frame = CGRect(x: gradientView.frame.origin.x, y: gradientView.frame.origin.y, width: gradientView.frame.width, height: gradientView.frame.width)
         
         if currentGradient.colors.count == 1 {
-            let singleColor = currentGradient.colors[0].cgColor
+            let singleColor = UIColor(hexString: currentGradient.colors[0])!.cgColor
             gradientLayer.colors = [singleColor, singleColor]
         } else {
-            gradientLayer.colors = currentGradient.colors.map({$0.cgColor})
+            gradientLayer.colors = currentGradient.colors.map({UIColor(hexString: $0)!.cgColor})
         }
         
         gradientLayer.startPoint = currentGradient.direction.startPoint()
@@ -267,6 +289,8 @@ class CreateViewController: UIViewController {
         gradientLayer.cornerRadius = 8
     }
 }
+
+//MARK: - UITableViewDataSource
 
 extension CreateViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -293,7 +317,7 @@ extension CreateViewController: UITableViewDataSource {
             //            let cell = tableView.dequeueReusableCell(withIdentifier: "SwipeCell") as! SwipeTableViewCell
             
             cell.numberLabel.text = "\(indexPath.section + 1)"
-            cell.tapToEditView.backgroundColor = currentGradient.colors[indexPath.section]
+            cell.tapToEditView.backgroundColor = UIColor(hexString: currentGradient.colors[indexPath.section])
             cell.delegate = self
             return cell
             
@@ -311,6 +335,7 @@ extension CreateViewController: UITableViewDataSource {
 }
 
 //MARK: - SwipeTableViewCellDelegate
+
 extension CreateViewController: SwipeTableViewCellDelegate {
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
         guard orientation == .right else { return nil }
@@ -331,6 +356,8 @@ extension CreateViewController: SwipeTableViewCellDelegate {
     }
 }
 
+//MARK: - UITableViewDelegate
+
 extension CreateViewController: UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -339,7 +366,7 @@ extension CreateViewController: UITableViewDelegate{
         
         if currentColorListItemSelected < colorCount {
             // Edit only color -> Send current color to colorpicker
-            let currentColor = currentGradient.colors[indexPath.section]
+            let currentColor = UIColor(hexString: currentGradient.colors[indexPath.section])
             openColorPicker(color: currentColor)
             
         } else if currentColorListItemSelected == colorCount {
@@ -363,21 +390,17 @@ extension CreateViewController: UITableViewDelegate{
         }
     }
     
-    //    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-    //        return (indexPath.section < currentGradient.colors.count) ? true : false
-    //    }
-    
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return (indexPath.section < currentGradient.colors.count) ? true : false
     }
     
-        func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
-            if proposedDestinationIndexPath.section == currentGradient.colors.count {
-                return sourceIndexPath
-            } else {
-                return proposedDestinationIndexPath
-            }
+    func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
+        if proposedDestinationIndexPath.section == currentGradient.colors.count {
+            return sourceIndexPath
+        } else {
+            return proposedDestinationIndexPath
         }
+    }
     
     func openColorPicker(color: UIColor?){
         let picker = UIColorPickerViewController()
@@ -407,13 +430,16 @@ extension CreateViewController: UIColorPickerViewControllerDelegate {
         let colorCount = currentGradient.colors.count
         let color = viewController.selectedColor
         
+        //renew the currentGradient object to seperate it from the databases
+        renewCurrentGradientID()
+        
         // edit one color
         if currentColorListItemSelected < colorCount {
-            currentGradient.colors[currentColorListItemSelected] = color
+            currentGradient.colors[currentColorListItemSelected] = color.toHexString()
         }
         // add new color
         else if currentColorListItemSelected == colorCount {
-            currentGradient.colors.append(color)
+            currentGradient.colors.append(color.toHexString())
         }
         
         updateGradientView()
@@ -441,20 +467,5 @@ extension UITableView {
             superview.layer.mask = gradient
         }
         backgroundColor = UIColor.clear
-    }
-}
-
-extension UIColor {
-    func toHexString() -> String {
-        var r:CGFloat = 0
-        var g:CGFloat = 0
-        var b:CGFloat = 0
-        var a:CGFloat = 0
-        
-        getRed(&r, green: &g, blue: &b, alpha: &a)
-        
-        let rgb:Int = (Int)(r*255)<<16 | (Int)(g*255)<<8 | (Int)(b*255)<<0
-        
-        return String(format:"#%06x", rgb)
     }
 }
