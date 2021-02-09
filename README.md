@@ -1,5 +1,5 @@
 # Gradients
-Swift app to create gradient background in different sizes.
+Swift app to create gradient backgrounds in different sizes.
 
 <p align="center">
   <img src="./Screenshots/Light_Dark%20Mode/973EB6B6-96AB-4442-A56E-9F08B179E06C_1_105_c.jpeg" width="300" title="hover text">
